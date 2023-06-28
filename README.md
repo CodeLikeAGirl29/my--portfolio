@@ -11,6 +11,8 @@ Create a professional and visually appealing web developer portfolio to showcase
 
 ![screenshot](https://res.cloudinary.com/codelikeagirl29/image/upload/v1687957114/projects/lindseyk_kua45j.png)
 
+> Check out the project [here](https://modern-cv-resume.netlify.app/)
+
 Objectives:
 
 Create a visually engaging website design that represents your personal brand as a web developer.
