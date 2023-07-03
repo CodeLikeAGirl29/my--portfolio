@@ -4931,7 +4931,7 @@
          display: none;
     }
      .async-entry .title {
-         padding: 0 0 20px 0 !important;
+         padding: 0 0 20px !important;
     }
      .async-entry .title > * {
          margin: 0 !important;
@@ -4986,7 +4986,7 @@
      font-size: 0;
 }
  .buttons-align-wrapper .button {
-     margin: 0 15px 15px 15px;
+     margin: 0 15px 15px;
 }
  .homepage-portfolio-preview-1 {
      max-width: 570px;
@@ -5635,9 +5635,9 @@
      border-left: none;
      border-right: none;
      border-top: none;
-     padding: 5px 5px;
+     padding: 5px;
      background: none;
-     margin: 10px 0 10px 0;
+     margin: 10px 0;
      font-family: "Raleway", sans-serif;
      font-size: 13px;
      letter-spacing: 0.05em;
@@ -5660,7 +5660,7 @@
      border-left: none;
      border-right: none;
      border-top: none;
-     padding: 5px 5px;
+     padding: 5px;
      background: none;
      margin: 5px;
      font-family: "Raleway", sans-serif;
@@ -5678,7 +5678,7 @@
      transition: all 0.5s linear;
 }
  #form textarea {
-     margin: 10px 0 10px 0;
+     margin: 10px 0;
      -webkit-transition: all 0.5s linear;
      -moz-transition: all 0.5s linear;
      -ms-transition: all 0.5s linear;
@@ -5827,7 +5827,7 @@
 /*Phones (<768px)*/
  @media (max-width: 767px) {
      .contacts-wrapper-2 .cell-view {
-         padding: 65px 0 15px 0;
+         padding: 65px 0 15px;
     }
 }
 /*-------------------------------------------------------------------------------------------------------------------------------*/
@@ -6182,8 +6182,8 @@
      width: 0;
      height: 0;
      border-style: solid;
-     border-width: 5px 3.5px 0 3.5px;
-     border-color: #222222 transparent transparent transparent;
+     border-width: 5px 3.5px 0;
+     border-color: #222222 transparent transparent;
 }
  .sorting-menu.style-2 .responsive-filtration-title.active:after {
      transform: rotate(-180deg);
@@ -6529,7 +6529,7 @@
      margin: 0 -15px;
 }
  .blog-1 .sorting-item {
-     padding: 0 15px 30px 15px;
+     padding: 0 15px 30px;
 }
  .blog-1 .grid-sizer {
      width: 16.667%;
@@ -6625,7 +6625,7 @@
  .sorting-menu.style-3 a {
      color: #222;
      line-height: 28px;
-     padding: 2px 20px 0 20px;
+     padding: 2px 20px 0;
      display: inline-block;
      background: #fff;
      margin: 0 5px;
@@ -6669,7 +6669,6 @@
      padding-top: 30px;
 }
  .page-pagination {
-     text-align: center;
      margin: 0;
      text-transform: uppercase;
      text-align: center;
