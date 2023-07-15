@@ -1,658 +1,945 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, minimal-ui"/>
-    
-    <!-- fonts collection 8 -->
-    <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, minimal-ui"
+		/>
 
-     <link href="../css/normalize.css" rel="stylesheet" type="text/css" />
-    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="../css/bootstrap.extension.css" rel="stylesheet" type="text/css" />
-    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="../css/style.css" rel="stylesheet" type="text/css" />
-    <link href="../css/swiper.css" rel="stylesheet" type="text/css" />
-    <!--[if lt IE 9]>
-        <link rel="stylesheet" type="text/css" href="css/ie8-and-down.css" />
-    <![endif]-->
-    <!--[if IE 9]>
-        <link href="css/ie9.css" rel="stylesheet" type="text/css" />
-    <![endif]-->
-    <link rel="shortcut icon" href="../img/favicon.ico" />
-  	<title>lindsey</title>
-</head>
-<body class="fonts-8">
+		<!-- fonts collection 8 -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Inconsolata:400,700"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap"
+			rel="stylesheet"
+		/>
 
-    <!-- LOADER -->
-    <div id="loader-wrapper"></div>
+		<link href="../css/normalize.css" rel="stylesheet" type="text/css" />
+		<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link
+			href="../css/bootstrap.extension.css"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link href="../css/style.css" rel="stylesheet" type="text/css" />
+		<link href="../css/swiper.css" rel="stylesheet" type="text/css" />
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" type="text/css" href="css/ie8-and-down.css" />
+		<![endif]-->
+		<!--[if IE 9]>
+			<link href="css/ie9.css" rel="stylesheet" type="text/css" />
+		<![endif]-->
+		<link rel="shortcut icon" href="../img/favicon.ico" />
+		<title>lindsey</title>
+	</head>
+	<body class="fonts-8">
+		<!-- LOADER -->
+		<div id="loader-wrapper"></div>
 
-    <div class="overlay" data-rel="1">
-        <div class="animation-wrapper full-size"></div>
-        <div class="content-wrapper full-size">
-            <div class="cell-view page-height">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-2 col-xs-b30 col-sm-0">
-                        
-                            <nav class="text-left clearfix">
-                                <ul>
-                                    <li class="active">
-                                        <a href="index.html">Home</a>
-                                        <span class="toggle-icon"></span>
-                                        <ul>
-                                            <li class="active">
-                                                <a href="#">Fullscreen slider (Horizontal)</a>
-                                                <span class="toggle-icon"></span>
-                                                <ul>
-                                                    <li><a href="index.html">slider #1</a></li>
-                                                    <li><a href="index2.html">slider #2</a></li>
-                                                    <li><a href="index9.html">slider #3</a></li>
-                                                    <li><a href="index14.html">slider #4</a></li>
-                                                    <li><a href="index7.html">slider #5</a></li>
-                                                    <li><a href="index12.html">slider #6</a></li>
-                                                    <li><a href="index4.html">slider 4 sections #1</a></li>
-                                                    <li><a href="index10.html">slider 4 sections #2</a></li>
-                                                    <li><a href="index13.html">slider 4 sections #3</a></li>
-                                                    <li><a href="index5.html">slider 3 sections</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="#">Fullscreen slider (Vertical)</a>
-                                                <span class="toggle-icon"></span>
-                                                <ul>
-                                                    <li><a href="index3.html">color slider</a></li>
-                                                    <li><a href="index6.html">slider creative #1</a></li>
-                                                    <li><a href="index8.html">slider creative #2</a></li>
-                                                    <li><a href="index15.html">vertical slider</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="index2.1.html">Middle pages</a>
-                                                <span class="toggle-icon"></span>
-                                                <ul>
-                                                    <li><a href="index2.1.html">left/rigth projects</a></li>
-                                                    <li><a href="index2.3.html">projects list #1</a></li>
-                                                    <li><a href="index2.6.html">projects list #2</a></li>
-                                                    <li><a href="index2.5.html">projects list #3</a></li>
-                                                    <li><a href="index2.7.html">projects list #4</a></li>
-                                                    <li><a href="index2.8.html">projects list #5</a></li>
-                                                    <li><a href="index2.9.html">projects list #6</a></li>
-                                                    <li><a href="index2.2.html">projects slider</a></li>
-                                                    <li><a href="index2.4.html">2 columns fullscreen</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="indexvideo.html">Video banner</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="about1.html">About</a>
-                                        <span class="toggle-icon"></span>
-                                        <ul>
-                                            <li>
-                                                <a href="about1.html">About Us #1</a>
-                                            </li>
-                                            <li>
-                                                <a href="about2.html">About Us #2</a>
-                                            </li>
-                                            <li>
-                                                <a href="about3.html">About Us #3</a>
-                                            </li>
-                                            <li>
-                                                <a href="about4.html">About Us #4</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="portfolio1.html">Portfolio</a>
-                                        <span class="toggle-icon"></span>
-                                        <ul>
-                                            <li>
-                                                <a href="portfolio1.html">Projects List</a>
-                                                <span class="toggle-icon"></span>
-                                                <ul>
-                                                    <li><a href="portfolio5.html">2 columns grid #1</a></li>
-                                                    <li><a href="portfolio7.html">2 columns grid #2</a></li>
-                                                    <li><a href="portfolio2.html">2 columns fullscreen #1</a></li>
-                                                    <li><a href="portfolio3.html">2 columns fullscreen #2</a></li>
-                                                    <li><a href="portfolio1.html">3 columns #1</a></li>
-                                                    <li><a href="portfolio4.html">3 columns #2</a></li>
-                                                    <li><a href="portfolio6.html">3 columns #3</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="detail1.html">Projects Detail</a>
-                                                <span class="toggle-icon"></span>
-                                                <ul>
-                                                    <li><a href="detail1.html">Project 1</a></li>
-                                                    <li><a href="detail2.html">Project 2</a></li>
-                                                    <li><a href="detail3.html">Project 3</a></li>
-                                                    <li><a href="detail4.html">Project 4</a></li>
-                                                    <li><a href="detail5.html">Project 5</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
+		<div class="overlay" data-rel="1">
+			<div class="animation-wrapper full-size"></div>
+			<div class="content-wrapper full-size">
+				<div class="cell-view page-height">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-2 col-xs-b30 col-sm-0">
+								<nav class="text-left clearfix">
+									<ul>
+										<li class="active">
+											<a href="index.html">Home</a>
+											<span class="toggle-icon"></span>
+											<ul>
+												<li class="active">
+													<a href="#">Fullscreen slider (Horizontal)</a>
+													<span class="toggle-icon"></span>
+													<ul>
+														<li><a href="index.html">slider #1</a></li>
+														<li><a href="index2.html">slider #2</a></li>
+														<li><a href="index9.html">slider #3</a></li>
+														<li><a href="index14.html">slider #4</a></li>
+														<li><a href="index7.html">slider #5</a></li>
+														<li><a href="index12.html">slider #6</a></li>
+														<li>
+															<a href="index4.html">slider 4 sections #1</a>
+														</li>
+														<li>
+															<a href="index10.html">slider 4 sections #2</a>
+														</li>
+														<li>
+															<a href="index13.html">slider 4 sections #3</a>
+														</li>
+														<li><a href="index5.html">slider 3 sections</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="#">Fullscreen slider (Vertical)</a>
+													<span class="toggle-icon"></span>
+													<ul>
+														<li><a href="index3.html">color slider</a></li>
+														<li>
+															<a href="index6.html">slider creative #1</a>
+														</li>
+														<li>
+															<a href="index8.html">slider creative #2</a>
+														</li>
+														<li><a href="index15.html">vertical slider</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="index2.1.html">Middle pages</a>
+													<span class="toggle-icon"></span>
+													<ul>
+														<li>
+															<a href="index2.1.html">left/rigth projects</a>
+														</li>
+														<li>
+															<a href="index2.3.html">projects list #1</a>
+														</li>
+														<li>
+															<a href="index2.6.html">projects list #2</a>
+														</li>
+														<li>
+															<a href="index2.5.html">projects list #3</a>
+														</li>
+														<li>
+															<a href="index2.7.html">projects list #4</a>
+														</li>
+														<li>
+															<a href="index2.8.html">projects list #5</a>
+														</li>
+														<li>
+															<a href="index2.9.html">projects list #6</a>
+														</li>
+														<li><a href="index2.2.html">projects slider</a></li>
+														<li>
+															<a href="index2.4.html">2 columns fullscreen</a>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<a href="indexvideo.html">Video banner</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="about1.html">About</a>
+											<span class="toggle-icon"></span>
+											<ul>
+												<li>
+													<a href="about1.html">About Us #1</a>
+												</li>
+												<li>
+													<a href="about2.html">About Us #2</a>
+												</li>
+												<li>
+													<a href="about3.html">About Us #3</a>
+												</li>
+												<li>
+													<a href="about4.html">About Us #4</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<a href="portfolio1.html">Portfolio</a>
+											<span class="toggle-icon"></span>
+											<ul>
+												<li>
+													<a href="portfolio1.html">Projects List</a>
+													<span class="toggle-icon"></span>
+													<ul>
+														<li>
+															<a href="portfolio5.html">2 columns grid #1</a>
+														</li>
+														<li>
+															<a href="portfolio7.html">2 columns grid #2</a>
+														</li>
+														<li>
+															<a href="portfolio2.html"
+																>2 columns fullscreen #1</a
+															>
+														</li>
+														<li>
+															<a href="portfolio3.html"
+																>2 columns fullscreen #2</a
+															>
+														</li>
+														<li><a href="portfolio1.html">3 columns #1</a></li>
+														<li><a href="portfolio4.html">3 columns #2</a></li>
+														<li><a href="portfolio6.html">3 columns #3</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="details.html">Projects Detail</a>
+													<span class="toggle-icon"></span>
+													<ul>
+														<li><a href="details.html">Project 1</a></li>
+														<li><a href="detail2.html">Project 2</a></li>
+														<li><a href="detail3.html">Project 3</a></li>
+														<li><a href="detail4.html">Project 4</a></li>
+														<li><a href="detail5.html">Project 5</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
 
-                                    <li>
-                                        <a href="services1.html">Services</a>
-                                        <span class="toggle-icon"></span>
-                                        <ul>
-                                            <li>
-                                                <a href="services1.html">Services #1</a>
-                                            </li>
-                                            <li>
-                                                <a href="services2.html">Services #2</a>
-                                            </li>
-                                            <li>
-                                                <a href="services3.html">Services #3</a>
-                                            </li>
-                                            <li>
-                                                <a href="services4.html">Services #4</a>
-                                            </li>
-                                        </ul>
-                                    </li>
+										<li>
+											<a href="services1.html">Services</a>
+											<span class="toggle-icon"></span>
+											<ul>
+												<li>
+													<a href="services1.html">Services #1</a>
+												</li>
+												<li>
+													<a href="services2.html">Services #2</a>
+												</li>
+												<li>
+													<a href="services3.html">Services #3</a>
+												</li>
+												<li>
+													<a href="services4.html">Services #4</a>
+												</li>
+											</ul>
+										</li>
 
-                                    <li>
-                                        <a href="blog1.html">Blog</a>
-                                        <span class="toggle-icon"></span>
-                                        <ul>
-                                            <li>
-                                                <a href="blog1.html.html">Blog List</a>
-                                                <span class="toggle-icon"></span>
-                                                <ul>
-                                                    <li><a href="blog1.html">Material style</a></li>
-                                                    <li><a href="blog2.html">3 columns grid</a></li>
-                                                    <li><a href="blog3.html">Left/right fullscreen</a></li>
-                                                    <li><a href="blog4.html">Right sidebar</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="blogdetail1.html">Blog Detail</a>
-                                                <span class="toggle-icon"></span>
-                                                <ul>
-                                                    <li><a href="blogdetail1.html">Right sidebar</a></li>
-                                                    <li><a href="blogdetail2.html">With banner grid</a></li>
-                                                    <li><a href="blogdetail3.html">Grid post</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
+										<li>
+											<a href="blog1.html">Blog</a>
+											<span class="toggle-icon"></span>
+											<ul>
+												<li>
+													<a href="blog1.html.html">Blog List</a>
+													<span class="toggle-icon"></span>
+													<ul>
+														<li><a href="blog1.html">Material style</a></li>
+														<li><a href="blog2.html">3 columns grid</a></li>
+														<li>
+															<a href="blog3.html">Left/right fullscreen</a>
+														</li>
+														<li><a href="blog4.html">Right sidebar</a></li>
+													</ul>
+												</li>
+												<li>
+													<a href="blogdetail1.html">Blog Detail</a>
+													<span class="toggle-icon"></span>
+													<ul>
+														<li>
+															<a href="blogdetail1.html">Right sidebar</a>
+														</li>
+														<li>
+															<a href="blogdetail2.html">With banner grid</a>
+														</li>
+														<li><a href="blogdetail3.html">Grid post</a></li>
+													</ul>
+												</li>
+											</ul>
+										</li>
 
-                                    <li class="megamenu-wrapper">
-                                        <a href="#">Pages</a>
-                                        <span class="toggle-icon"></span>
-                                        <div class="megamenu clearfix">
-                                            <div class="row">
-                                                <div class="col-md-3">                                                    
-                                                    <a href="portfolio1.html" class="title">Projects List</a>
-                                                    <span class="toggle-icon"></span>
-                                                    <div class="rs-slide">
-                                                        <a href="portfolio5.html">2 columns grid #1</a>
-                                                        <a href="portfolio7.html">2 columns grid #2</a>
-                                                        <a href="portfolio1.html">3 columns #1</a>
-                                                        <a href="portfolio4.html">3 columns #2</a>
-                                                        <a href="portfolio6.html">3 columns #3</a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <a href="detail1.html" class="title">Projects Detail</a>
-                                                    <span class="toggle-icon"></span>
-                                                    <div class="rs-slide">
-                                                        <a href="detail1.html">Project 1</a>
-                                                        <a href="detail2.html">Project 2</a>
-                                                        <a href="detail3.html">Project 3</a>
-                                                        <a href="detail4.html">Project 4</a>
-                                                        <a href="detail5.html">Project 5</a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3">                                                    
-                                                    <a href="contacts1.html" class="title">Contact</a>
-                                                    <span class="toggle-icon"></span>
-                                                    <div class="rs-slide">
-                                                        <a href="contacts1.html">Contact #1</a>
-                                                        <a href="contacts2.html">Contact #2</a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3">                                                    
-                                                    <a href="contacts1.html" class="title">Coming Soon</a>
-                                                    <span class="toggle-icon"></span>
-                                                    <div class="rs-slide">
-                                                        <a href="teaser1.html">Teaser #1</a>
-                                                        <a href="teaser2.html">Teaser #2</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <a href="elements.html">Elements</a>
-                                    </li>
-                                </ul>
-                            </nav>
+										<li class="megamenu-wrapper">
+											<a href="#">Pages</a>
+											<span class="toggle-icon"></span>
+											<div class="megamenu clearfix">
+												<div class="row">
+													<div class="col-md-3">
+														<a href="portfolio1.html" class="title"
+															>Projects List</a
+														>
+														<span class="toggle-icon"></span>
+														<div class="rs-slide">
+															<a href="portfolio5.html">2 columns grid #1</a>
+															<a href="portfolio7.html">2 columns grid #2</a>
+															<a href="portfolio1.html">3 columns #1</a>
+															<a href="portfolio4.html">3 columns #2</a>
+															<a href="portfolio6.html">3 columns #3</a>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<a href="details.html" class="title"
+															>Projects Detail</a
+														>
+														<span class="toggle-icon"></span>
+														<div class="rs-slide">
+															<a href="details.html">Project 1</a>
+															<a href="detail2.html">Project 2</a>
+															<a href="detail3.html">Project 3</a>
+															<a href="detail4.html">Project 4</a>
+															<a href="detail5.html">Project 5</a>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<a href="contacts1.html" class="title">Contact</a>
+														<span class="toggle-icon"></span>
+														<div class="rs-slide">
+															<a href="contacts1.html">Contact #1</a>
+															<a href="contacts2.html">Contact #2</a>
+														</div>
+													</div>
+													<div class="col-md-3">
+														<a href="contacts1.html" class="title"
+															>Coming Soon</a
+														>
+														<span class="toggle-icon"></span>
+														<div class="rs-slide">
+															<a href="teaser1.html">Teaser #1</a>
+															<a href="teaser2.html">Teaser #2</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="elements.html">Elements</a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							<div
+								class="col-sm-6 col-md-4 col-md-offset-1 col-xs-b30 col-sm-0"
+							>
+								<div
+									class="simple-article light transparent col-xs-b30 col-sm-b50"
+								>
+									<div class="h4 small">INFORMATION</div>
+									<div class="empty-space col-xs-b10"></div>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua. Ut enim ad minim veniam, quis nostrud.
+									</p>
+								</div>
+								<div
+									class="simple-article light transparent col-xs-b30 col-sm-b50"
+								>
+									<div class="h4 small">CONTACT INFO</div>
+									<div class="empty-space col-xs-b10"></div>
+									<p>
+										Email:
+										<a
+											class="mouseover-simple"
+											href="mailto:modesto@email.com"
+											style="color: #fff"
+											><b>modesto@email.com</b></a
+										>
+									</p>
+									<p>
+										Phone:
+										<a
+											class="mouseover-simple"
+											href="tel:+0009872251"
+											style="color: #fff"
+											><b>+000 987 22 51</b></a
+										>
+									</p>
+								</div>
+								<div class="h4 small light">FOLLOW ME</div>
+								<div class="empty-space col-xs-b15"></div>
+								<div class="follow">
+									<a href="#" class="entry"><i class="fa fa-instagram"></i></a>
+									<a href="#" class="entry"><i class="fa fa-facebook"></i></a>
+									<a href="#" class="entry"
+										><i class="fa fa-pinterest-p"></i
+									></a>
+									<a href="#" class="entry"><i class="fa fa-twitter"></i></a>
+									<a href="#" class="entry"
+										><i class="fa fa-google-plus"></i
+									></a>
+								</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-md-offset-1">
+								<div class="twitter-entry col-xs-b15 col-sm-b30">
+									<div class="row col-xs-b15">
+										<div class="col-xs-6">
+											<div class="date"><i>20 min ago</i></div>
+										</div>
+										<div class="col-xs-6 text-right">
+											<i class="fa fa-twitter"></i>
+										</div>
+									</div>
+									<div class="simple-article light col-xs-b10">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna
+										aliqua.
+									</div>
+									<a href="#" class="author">@modestodesign</a>
+									<div class="col-xs-b10"></div>
+									<a href="#" class="link"><i>https://www.youtube.com/</i></a>
+								</div>
+								<div class="overlay-thumbnails-wrapper">
+									<div class="row nopadding">
+										<div class="col-xs-4">
+											<a class="overlay-thumbnail" href="#"
+												><img src="img/thumbnail-1.jpg" alt="" /><img
+													src="img/thumbnail-1.jpg"
+													alt=""
+											/></a>
+										</div>
+										<div class="col-xs-4">
+											<a class="overlay-thumbnail" href="#"
+												><img src="img/thumbnail-2.jpg" alt="" /><img
+													src="img/thumbnail-2.jpg"
+													alt=""
+											/></a>
+										</div>
+										<div class="col-xs-4">
+											<a class="overlay-thumbnail" href="#"
+												><img src="img/thumbnail-3.jpg" alt="" /><img
+													src="img/thumbnail-3.jpg"
+													alt=""
+											/></a>
+										</div>
+										<div class="clear"></div>
+										<div class="col-xs-4">
+											<a class="overlay-thumbnail" href="#"
+												><img src="img/thumbnail-4.jpg" alt="" /><img
+													src="img/thumbnail-4.jpg"
+													alt=""
+											/></a>
+										</div>
+										<div class="col-xs-4">
+											<a class="overlay-thumbnail" href="#"
+												><img src="img/thumbnail-5.jpg" alt="" /><img
+													src="img/thumbnail-5.jpg"
+													alt=""
+											/></a>
+										</div>
+										<div class="col-xs-4">
+											<a class="overlay-thumbnail" href="#"
+												><img src="img/thumbnail-6.jpg" alt="" /><img
+													src="img/thumbnail-6.jpg"
+													alt=""
+											/></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a class="button-close"></a>
+			</div>
+		</div>
 
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-md-offset-1 col-xs-b30 col-sm-0">
-                            <div class="simple-article light transparent col-xs-b30 col-sm-b50">
-                                <div class="h4 small">INFORMATION</div>
-                                <div class="empty-space col-xs-b10"></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                            </div>
-                            <div class="simple-article light transparent col-xs-b30 col-sm-b50">
-                                <div class="h4 small">CONTACT INFO</div>
-                                <div class="empty-space col-xs-b10"></div>
-                                <p>Email: <a class="mouseover-simple" href="mailto:modesto@email.com" style="color: #fff;"><b>modesto@email.com</b></a></p>
-                                <p>Phone: <a class="mouseover-simple" href="tel:+0009872251" style="color: #fff;"><b>+000 987 22 51</b></a></p>
-                            </div>
-                            <div class="h4 small light">FOLLOW ME</div>
-                            <div class="empty-space col-xs-b15"></div>
-                            <div class="follow">
-                                <a href="#" class="entry"><i class="fa fa-instagram"></i></a>
-                                <a href="#" class="entry"><i class="fa fa-facebook"></i></a>
-                                <a href="#" class="entry"><i class="fa fa-pinterest-p"></i></a>
-                                <a href="#" class="entry"><i class="fa fa-twitter"></i></a>
-                                <a href="#" class="entry"><i class="fa fa-google-plus"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-4 col-md-offset-1">
-                            <div class="twitter-entry col-xs-b15 col-sm-b30">
-                                <div class="row col-xs-b15">
-                                    <div class="col-xs-6">
-                                        <div class="date"><i>20 min ago</i></div>  
-                                    </div>
-                                    <div class="col-xs-6 text-right">
-                                        <i class="fa fa-twitter"></i>
-                                    </div>
-                                </div>
-                                <div class="simple-article light col-xs-b10">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                                <a href="#" class="author">@modestodesign</a>
-                                <div class="col-xs-b10"></div>
-                                <a href="#" class="link"><i>https://www.youtube.com/</i></a>
-                            </div>
-                            <div class="overlay-thumbnails-wrapper">
-                                <div class="row nopadding">
-                                    <div class="col-xs-4"><a class="overlay-thumbnail" href="#"><img src="img/thumbnail-1.jpg" alt="" /><img src="img/thumbnail-1.jpg" alt="" /></a></div>
-                                    <div class="col-xs-4"><a class="overlay-thumbnail" href="#"><img src="img/thumbnail-2.jpg" alt="" /><img src="img/thumbnail-2.jpg" alt="" /></a></div>
-                                    <div class="col-xs-4"><a class="overlay-thumbnail" href="#"><img src="img/thumbnail-3.jpg" alt="" /><img src="img/thumbnail-3.jpg" alt="" /></a></div>
-                                    <div class="clear"></div>
-                                    <div class="col-xs-4"><a class="overlay-thumbnail" href="#"><img src="img/thumbnail-4.jpg" alt="" /><img src="img/thumbnail-4.jpg" alt="" /></a></div>
-                                    <div class="col-xs-4"><a class="overlay-thumbnail" href="#"><img src="img/thumbnail-5.jpg" alt="" /><img src="img/thumbnail-5.jpg" alt="" /></a></div>
-                                    <div class="col-xs-4"><a class="overlay-thumbnail" href="#"><img src="img/thumbnail-6.jpg" alt="" /><img src="img/thumbnail-6.jpg" alt="" /></a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="button-close"></a>
-        </div>
-    </div>
+		<div id="content-block">
+			<!-- HEADER -->
+			<header class="type-4 light fixed">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-6 col-sm-2">
+							<a class="logo"><img src="img/logo1.png" alt="" /></a>
+						</div>
+						<div class="col-xs-6 col-sm-10 text-right">
+							<div class="hamburger-icon open-overlay" data-rel="1">
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="close-layer toggle-visibility">
+					<div class="button-close"></div>
+				</div>
+			</header>
 
-    <div id="content-block">
-        <!-- HEADER -->
-        <header class="type-4 light fixed">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-6 col-sm-2">
-                        <a class="logo"><img src="img/logo1.png" alt="" /></a>  
-                    </div>
-                    <div class="col-xs-6 col-sm-10 text-right">
-                        <div class="hamburger-icon open-overlay" data-rel="1">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="close-layer toggle-visibility"><div class="button-close"></div></div>
-        </header>
+			<div
+				class="fixed-background"
+				style="background-image: url(img/blog-background-3.jpg)"
+			>
+				<div class="banner-height">
+					<div class="full-size-banner-entry full-size valign-middle">
+						<div class="valign-text-wrapper text-center">
+							<div class="row">
+								<div
+									class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3"
+								>
+									<div class="h2 light">
+										<b>MAZE OF INFORMATION TO THE BASICS PHOTOS</b>
+									</div>
+									<div class="empty-space col-xs-b15"></div>
+									<div class="banner-max-width">
+										<div class="simple-article small light transparent">
+											Goran Ramljak / January 19, 2016 &nbsp;&nbsp;&nbsp; 5
+											<i class="fa fa-heart-o"></i> 8
+											<i class="fa fa-comments-o"></i>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-        <div class="fixed-background" style="background-image: url(img/blog-background-3.jpg);">
-            <div class="banner-height">
-                <div class="full-size-banner-entry full-size valign-middle">
-                    <div class="valign-text-wrapper text-center">
-                        <div class="row">
-                            <div class="col-sm-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-                                <div class="h2 light"><b>MAZE OF INFORMATION TO THE BASICS PHOTOS</b></div>
-                                <div class="empty-space col-xs-b15"></div>
-                                <div class="banner-max-width">
-                                    <div class="simple-article small light transparent">Goran Ramljak / January 19, 2016 &nbsp;&nbsp;&nbsp; 5 <i class="fa fa-heart-o"></i> 8 <i class="fa fa-comments-o"></i></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+			<div class="empty-space col-xs-b55 col-sm-b110"></div>
 
-        <div class="empty-space col-xs-b55 col-sm-b110"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="h3 col-xs-text-center">
+							<b>PELLENTESQUE ALIQUAM A ERAT UT ELEMENTUM INFORMATION</b>
+						</div>
+						<div class="empty-space col-xs-b15"></div>
+						<div class="simple-article grey">
+							<p>
+								Integer ornare magna ut convallis efficitur. Donec eu venenatis
+								tellus, et convallis purus. Cras erat elit, sagittis nec
+								consequat in, molestie eget ligula. Nullam eu nunc eu mauris
+								convallis commodo. Fusce efficitur erat sit amet nulla consequat
+								scelerisque. Donec laoreet consequat magna, vel rhoncus neque
+								semper vel. Nunc et tristique libero
+							</p>
+							<br />
+							<div class="text-center">
+								<img class="blockquote-image" src="img/detail-30.jpg" alt="" />
+								<div class="empty-space col-xs-b25"></div>
+								<div class="h5 small">
+									<b>“A GOOD MODEL CAN ADVANCE FASHION BY TEN YEARS”</b>
+								</div>
+								<div class="empty-space col-xs-b15"></div>
+								<div class="simple-article grey">
+									<span class="inline-indent"></span>Yves Saint Laurent, fashion
+									gesigner
+								</div>
+							</div>
+							<br />
+							<p>
+								Nunc a sapien ut augue dictum dignissim. Aliquam volutpat ipsum
+								tincidunt pretium euismod. Nulla quis eros ac dolor rhoncus
+								convallis eget in nisi. Quisque metus ante, consectetur eu velit
+								vitae, pharetra vestibulum erat. Curabitur non porttitor nulla.
+								In maximus gravida turpis, vitae facilisis nunc hendrerit
+							</p>
+							<br />
+							<div class="column-indent">
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe
+										class="embed-responsive-item"
+										src="https://player.vimeo.com/video/15368982?color=ffffff"
+										allowfullscreen
+									></iframe>
+								</div>
+							</div>
+							<br />
+							<p>
+								Aliquam sit amet velit feugiat, dictum ipsum eget, eleifend
+								justo. Maecenas lorem tortor, consectetur id nisl in,
+								pellentesque venenatis arcu. Ut finibus, urna at aliquam
+								iaculis, dolor turpis suscipit ipsum, volutpat scelerisque nunc
+								est tempus lacus. Ut ut pellentesque urna, quis tristique
+								sapien. Aliquam semper nisi a lectus sollicitudin
+							</p>
+							<br />
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <div class="h3 col-xs-text-center"><b>PELLENTESQUE ALIQUAM A ERAT UT ELEMENTUM INFORMATION</b></div>
-                    <div class="empty-space col-xs-b15"></div>
-                    <div class="simple-article grey">
-                        <p>Integer ornare magna ut convallis efficitur. Donec eu venenatis tellus, et convallis purus. Cras erat elit, sagittis nec consequat in, molestie eget ligula. Nullam eu nunc eu mauris convallis commodo. Fusce efficitur erat sit amet nulla consequat scelerisque. Donec laoreet consequat magna, vel rhoncus neque semper vel. Nunc et tristique libero</p>
-                        <br/>
-                        <div class="text-center">
-                            <img class="blockquote-image" src="img/detail-30.jpg" alt="">
-                            <div class="empty-space col-xs-b25"></div>
-                            <div class="h5 small"><b>“A GOOD MODEL CAN ADVANCE FASHION BY TEN YEARS”</b></div>
-                            <div class="empty-space col-xs-b15"></div>
-                            <div class="simple-article grey"><span class="inline-indent"></span>Yves Saint Laurent, fashion gesigner</div>
-                        </div>
-                        <br/>
-                        <p>Nunc a sapien ut augue dictum dignissim. Aliquam volutpat ipsum tincidunt pretium euismod. Nulla quis eros ac dolor rhoncus convallis eget in nisi. Quisque metus ante, consectetur eu velit vitae, pharetra vestibulum erat. Curabitur non porttitor nulla. In maximus gravida turpis, vitae facilisis nunc hendrerit </p>
-                        <br/>
-                        <div class="column-indent">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/15368982?color=ffffff" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <br/>
-                        <p>Aliquam sit amet velit feugiat, dictum ipsum eget, eleifend justo. Maecenas lorem tortor, consectetur id nisl in, pellentesque venenatis arcu. Ut finibus, urna at aliquam iaculis, dolor turpis suscipit ipsum, volutpat scelerisque nunc est tempus lacus. Ut ut pellentesque urna, quis tristique sapien. Aliquam semper nisi a lectus sollicitudin</p>
-                        <br/>
+							<div class="column-indent">
+								<div
+									class="swiper-container simple-slider style-1"
+									data-autoplay="3000"
+								>
+									<div
+										class="swiper-button-prev swiper-button hidden-xs style-2"
+									></div>
+									<div
+										class="swiper-button-next swiper-button hidden-xs style-2"
+									></div>
+									<div class="swiper-wrapper">
+										<div
+											class="swiper-slide"
+											style="background-image: url(img/blog-detail-8.jpg)"
+										></div>
+										<div
+											class="swiper-slide"
+											style="background-image: url(img/blog-detail-9.jpg)"
+										></div>
+										<div
+											class="swiper-slide"
+											style="background-image: url(img/blog-detail-10.jpg)"
+										></div>
+										<div
+											class="swiper-slide"
+											style="background-image: url(img/blog-detail-11.jpg)"
+										></div>
+									</div>
+									<div class="swiper-pagination swiper-pagination-white"></div>
+								</div>
+							</div>
+							<br />
+							<p>
+								Ut finibus, urna at aliquam iaculis, dolor turpis suscipit
+								ipsum, volutpat scelerisque nunc est tempus lacus. Ut ut
+								pellentesque urna, quis tristique sapien
+							</p>
+						</div>
+						<div class="empty-space col-xs-b30"></div>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="h6 article-options-title"><b>TAGS</b></div>
+								<a class="tag-button" href="#">cinema</a>
+								<a class="tag-button" href="#">music</a>
+								<a class="tag-button" href="#">culture</a>
+								<div class="empty-space col-xs-b20 col-sm-b0"></div>
+							</div>
+							<div class="col-sm-6 col-sm-text-right">
+								<div class="follow style-4">
+									<div class="h6 article-options-title"><b>SHARE</b></div>
+									<a class="entry" href="#"><i class="fa fa-instagram"></i></a>
+									<a class="entry" href="#"><i class="fa fa-facebook"></i></a>
+									<a class="entry" href="#"><i class="fa fa-twitter"></i></a>
+									<a class="entry" href="#"
+										><i class="fa fa-google-plus"></i
+									></a>
+									<div
+										class="simple-article small grey article-likes-title blog-light-color"
+									>
+										<i class="fa fa-heart"></i> <span class="number">32</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="empty-space col-xs-b55 col-sm-b110"></div>
 
-                        <div class="column-indent">
-                            <div class="swiper-container simple-slider style-1" data-autoplay="3000">
-                                <div class="swiper-button-prev swiper-button hidden-xs style-2"></div>
-                                <div class="swiper-button-next swiper-button hidden-xs style-2"></div>
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide" style="background-image: url(img/blog-detail-8.jpg);">
+						<div class="h3 text-center"><b>RELATED POSTS</b></div>
+						<div class="empty-space col-xs-b30 col-sm-b60"></div>
+						<div class="row">
+							<div class="col-sm-6">
+								<div class="sorting-item">
+									<div class="blog-landing-entry-1 style-1">
+										<a
+											class="mouseover"
+											style="background-image: url(img/blog-detail-6.jpg)"
+											href="#"
+										>
+											<span class="mouseover-helper-icon"></span>
+										</a>
+										<div class="blog-icons">
+											<div class="row">
+												<div class="col-xs-6">
+													<div class="simple-article small light transparent">
+														5 <i class="fa fa-heart-o"></i> 8
+														<i class="fa fa-comments-o"></i>
+													</div>
+												</div>
+												<div class="col-xs-6 col-xs-text-right">
+													<div class="blog-category">design</div>
+												</div>
+											</div>
+										</div>
+										<div class="description">
+											<div class="title">
+												<a href="#" class="h4 small blog-mouseover-2"
+													><b>QUISQUE PHARETRA DIGNISSIM EX AT ELEMENTUM</b></a
+												>
+											</div>
+											<div class="empty-space col-xs-b15"></div>
+											<div class="simple-article grey small blog-light-color">
+												Goran Ramljak / January 19, 2016
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="empty-space col-xs-b30"></div>
+							</div>
+							<div class="col-sm-6">
+								<div class="sorting-item">
+									<div class="blog-landing-entry-1 style-1">
+										<a
+											class="mouseover"
+											style="background-image: url(img/blog-detail-7.jpg)"
+											href="#"
+										>
+											<span class="mouseover-helper-icon"></span>
+										</a>
+										<div class="blog-icons">
+											<div class="row">
+												<div class="col-xs-6">
+													<div class="simple-article small light transparent">
+														5 <i class="fa fa-heart-o"></i> 8
+														<i class="fa fa-comments-o"></i>
+													</div>
+												</div>
+												<div class="col-xs-6 col-xs-text-right">
+													<div class="blog-category">design</div>
+												</div>
+											</div>
+										</div>
+										<div class="description">
+											<div class="title">
+												<a href="#" class="h4 small blog-mouseover-2"
+													><b>QUISQUE PHARETRA DIGNISSIM EX AT ELEMENTUM</b></a
+												>
+											</div>
+											<div class="empty-space col-xs-b15"></div>
+											<div class="simple-article grey small blog-light-color">
+												Goran Ramljak / January 19, 2016
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="empty-space col-xs-b30"></div>
+							</div>
+						</div>
+						<div class="empty-space col-xs-b25 col-sm-b80"></div>
 
-                                    </div>
-                                    <div class="swiper-slide" style="background-image: url(img/blog-detail-9.jpg);">
+						<div class="h3 text-center"><b>COMMENTS</b></div>
+						<div class="empty-space col-xs-b30 col-sm-b60"></div>
+						<div class="comments-wrapper">
+							<div class="comment-entry">
+								<img class="icon" src="img/blog-avatar-2.jpg" alt="" />
+								<div class="description">
+									<div class="align">
+										<div class="row">
+											<div class="col-md-4">
+												<div class="h5 small"><b>CRISTIN MORIS</b></div>
+											</div>
+											<div class="col-md-6">
+												<div class="simple-article small grey blog-light-color">
+													June 12, 2015 at 14:02
+												</div>
+											</div>
+											<div class="col-md-2 col-md-text-right">
+												<div class="simple-article small">
+													<a href="#">Reply</a>
+												</div>
+											</div>
+										</div>
+										<div class="empty-space col-xs-b10"></div>
+										<div class="simple-article small grey">
+											Curabitur et ornare erat. Sed sit amet egestas enim. Fusce
+											non lobortis justo. In eleifend turpis nec libero
+											ultricies
+										</div>
+									</div>
+								</div>
+								<div class="clear"></div>
+								<div class="empty-space col-xs-b30"></div>
+							</div>
+							<div class="comment-entry">
+								<img class="icon" src="img/blog-avatar-1.jpg" alt="" />
+								<div class="description">
+									<div class="align">
+										<div class="row">
+											<div class="col-md-4">
+												<div class="h5 small"><b>CRISTIN MORIS</b></div>
+											</div>
+											<div class="col-md-6">
+												<div class="simple-article small grey blog-light-color">
+													June 12, 2015 at 14:02
+												</div>
+											</div>
+											<div class="col-md-2 col-md-text-right">
+												<div class="simple-article small">
+													<a href="#">Reply</a>
+												</div>
+											</div>
+										</div>
+										<div class="empty-space col-xs-b10"></div>
+										<div class="simple-article small grey">
+											Nam sit amet metus et tellus interdum ullamcorper nec nec
+											eros
+										</div>
+									</div>
+								</div>
+								<div class="clear"></div>
+								<div class="empty-space col-xs-b30"></div>
 
-                                    </div>
-                                    <div class="swiper-slide" style="background-image: url(img/blog-detail-10.jpg);">
+								<div class="comment-entry">
+									<img class="icon" src="img/blog-avatar-2.jpg" alt="" />
+									<div class="description">
+										<div class="align">
+											<div class="row">
+												<div class="col-md-4">
+													<div class="h5 small"><b>CRISTIN MORIS</b></div>
+												</div>
+												<div class="col-md-6">
+													<div
+														class="simple-article small grey blog-light-color"
+													>
+														June 12, 2015 at 14:02
+													</div>
+												</div>
+												<div class="col-md-2 col-md-text-right">
+													<div class="simple-article small">
+														<a href="#">Reply</a>
+													</div>
+												</div>
+											</div>
+											<div class="empty-space col-xs-b10"></div>
+											<div class="simple-article small grey">
+												Curabitur et ornare erat. Sed sit amet egestas enim.
+												Fusce non lobortis justo. In eleifend turpis nec libero
+												ultricies
+											</div>
+										</div>
+									</div>
+									<div class="clear"></div>
+									<div class="empty-space col-xs-b30"></div>
+								</div>
+							</div>
+						</div>
+						<div class="empty-space col-xs-b15 col-sm-b30"></div>
+						<div class="h4 small text-center"><b>LEAVE A REPLY</b></div>
+						<div class="empty-space col-xs-b15"></div>
+						<form>
+							<div class="row col-xs-b30">
+								<div class="col-sm-6 col-xs-b30 col-sm-b0">
+									<div class="input-wrapper">
+										<input name="name" class="input" type="text" />
+										<label>Name</label>
+										<span></span>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="input-wrapper">
+										<input name="email" class="input" type="text" />
+										<label>Email</label>
+										<span></span>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="input-wrapper">
+										<textarea name="message" class="input"></textarea>
+										<label>Message</label>
+										<span></span>
+									</div>
+								</div>
+							</div>
 
-                                    </div>
-                                    <div class="swiper-slide" style="background-image: url(img/blog-detail-11.jpg);">
+							<div class="empty-space col-xs-b40"></div>
+							<div class="button type-3">submit<input type="submit" /></div>
+						</form>
+						<div class="empty-space col-xs-b55 col-sm-b110"></div>
+					</div>
+				</div>
+			</div>
 
-                                    </div>
-                                </div>
-                                <div class="swiper-pagination swiper-pagination-white"></div>
-                            </div>
-                        </div>
-                        <br/>
-                        <p>Ut finibus, urna at aliquam iaculis, dolor turpis suscipit ipsum, volutpat scelerisque nunc est tempus lacus. Ut ut pellentesque urna, quis tristique sapien</p>
-                    </div>
-                    <div class="empty-space col-xs-b30"></div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="h6 article-options-title"><b>TAGS</b></div>
-                            <a class="tag-button" href="#">cinema</a>
-                            <a class="tag-button" href="#">music</a>
-                            <a class="tag-button" href="#">culture</a>
-                            <div class="empty-space col-xs-b20 col-sm-b0"></div>
-                        </div>
-                        <div class="col-sm-6 col-sm-text-right">
-                            <div class="follow style-4">
-                                <div class="h6 article-options-title"><b>SHARE</b></div>
-                                <a class="entry" href="#"><i class="fa fa-instagram"></i></a>
-                                <a class="entry" href="#"><i class="fa fa-facebook"></i></a>
-                                <a class="entry" href="#"><i class="fa fa-twitter"></i></a>
-                                <a class="entry" href="#"><i class="fa fa-google-plus"></i></a>
-                                <div class="simple-article small grey article-likes-title blog-light-color"><i class="fa fa-heart"></i> <span class="number">32</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="empty-space col-xs-b55 col-sm-b110"></div>
+			<div class="row nopadding">
+				<div class="col-xs-4">
+					<a class="portfolio-detail-related-entry" href="#">
+						<span
+							class="background full-size"
+							style="background-image: url(img/portfolio-36.jpg)"
+						></span>
+						<span class="text hidden-xs">
+							<span class="wide-container align-left">
+								<span class="tag"
+									><span class="inline-indent"></span>photoshooting</span
+								>
+								<span class="h4 light"><b>LADY WHO WAITING</b></span>
+							</span>
+						</span>
+					</a>
+				</div>
+				<div class="col-xs-4">
+					<div class="portfolio-detail-related-entry">
+						<a class="square-hamburger-icon" href="#">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</a>
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<a class="portfolio-detail-related-entry" href="#">
+						<span
+							class="background full-size"
+							style="background-image: url(img/portfolio-37.jpg)"
+						></span>
+						<span class="text hidden-xs">
+							<span class="wide-container align-right">
+								<span class="tag"
+									><span class="inline-indent"></span>photoshooting</span
+								>
+								<span class="h4 light"><b>LADY IN BLACK</b></span>
+							</span>
+						</span>
+					</a>
+				</div>
+			</div>
 
-                    <div class="h3 text-center"><b>RELATED POSTS</b></div>
-                    <div class="empty-space col-xs-b30 col-sm-b60"></div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="sorting-item">
-                                <div class="blog-landing-entry-1 style-1">
-                                    <a class="mouseover" style="background-image: url(img/blog-detail-6.jpg);" href="#">
-                                        <span class="mouseover-helper-icon"></span>
-                                    </a>
-                                    <div class="blog-icons">
-                                        <div class="row">
-                                            <div class="col-xs-6">
-                                                <div class="simple-article small light transparent">5 <i class="fa fa-heart-o"></i> 8 <i class="fa fa-comments-o"></i></div>
-                                            </div>
-                                            <div class="col-xs-6 col-xs-text-right">
-                                                <div class="blog-category">design</div>  
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="description">
-                                        <div class="title">
-                                            <a href="#" class="h4 small blog-mouseover-2"><b>QUISQUE PHARETRA DIGNISSIM EX AT ELEMENTUM</b></a>
-                                        </div>
-                                        <div class="empty-space col-xs-b15"></div>
-                                        <div class="simple-article grey small blog-light-color">Goran Ramljak / January 19, 2016</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="empty-space col-xs-b30"></div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="sorting-item">
-                                <div class="blog-landing-entry-1 style-1">
-                                    <a class="mouseover" style="background-image: url(img/blog-detail-7.jpg);" href="#">
-                                        <span class="mouseover-helper-icon"></span>
-                                    </a>
-                                    <div class="blog-icons">
-                                        <div class="row">
-                                            <div class="col-xs-6">
-                                                <div class="simple-article small light transparent">5 <i class="fa fa-heart-o"></i> 8 <i class="fa fa-comments-o"></i></div>
-                                            </div>
-                                            <div class="col-xs-6 col-xs-text-right">
-                                                <div class="blog-category">design</div>  
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="description">
-                                        <div class="title">
-                                            <a href="#" class="h4 small blog-mouseover-2"><b>QUISQUE PHARETRA DIGNISSIM EX AT ELEMENTUM</b></a>
-                                        </div>
-                                        <div class="empty-space col-xs-b15"></div>
-                                        <div class="simple-article grey small blog-light-color">Goran Ramljak / January 19, 2016</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="empty-space col-xs-b30"></div>
-                        </div>
-                    </div>
-                    <div class="empty-space col-xs-b25 col-sm-b80"></div>
+			<!-- FOOTER -->
+			<footer>
+				<div class="wide-container">
+					<div class="row">
+						<div
+							class="col-md-6 col-xs-text-center col-md-text-left col-sm-b10 col-md-b0"
+						>
+							<div class="copyright">
+								<div class="simple-article small grey transparent">
+									&copy; 2023 All rights reserved.
+									<div class="developed-by">
+										<i class="fa-solid fa-code"></i> with
+										<i class="fa fa-heart"></i> by
+										<a href="http://lindseyk.dev" target="blank">Lindsey.</a>
+									</div>
+								</div>
+							</div>
+							<div class="empty-space col-xs-b20 col-md-b0"></div>
+						</div>
+						<div class="col-md-6 col-xs-text-center col-md-text-right">
+							<div class="follow">
+								<span class="title">Follow me:</span>
+								<a
+									class="entry"
+									href="https://www.linkedin.com/in/lindsey-howard"
+									target="_blank"
+									><i class="fa fa-linkedin"></i
+								></a>
+								<a
+									class="entry"
+									href="https://www.facebook.com/codelikeagirl91"
+									target="_blank"
+									><i class="fa fa-facebook"></i
+								></a>
+								<a
+									class="entry"
+									href="https://www.github.com/codelikeagirl29"
+									target="_blank"
+									><i class="fa fa-github"></i
+								></a>
+								<a
+									class="entry"
+									href="https://twitter.com/dev_lindseyk"
+									target="_blank"
+									><i class="fa fa-twitter"></i
+								></a>
+								<a
+									class="entry"
+									href="https://stackoverflow.com/users/14072521/lindsey"
+									target="_blank"
+									><i class="fa fa-stack-overflow"></i
+								></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
 
-                    <div class="h3 text-center"><b>COMMENTS</b></div>
-                    <div class="empty-space col-xs-b30 col-sm-b60"></div>
-                    <div class="comments-wrapper">
-                        <div class="comment-entry">
-                            <img class="icon" src="img/blog-avatar-2.jpg" alt="" />
-                            <div class="description">
-                                <div class="align">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="h5 small"><b>CRISTIN MORIS</b></div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="simple-article small grey blog-light-color">June 12, 2015  at 14:02</div>
-                                        </div>
-                                        <div class="col-md-2 col-md-text-right">
-                                            <div class="simple-article small"><a href="#">Reply</a></div>
-                                        </div>
-                                    </div>
-                                    <div class="empty-space col-xs-b10"></div>
-                                    <div class="simple-article small grey">Curabitur et ornare erat. Sed sit amet egestas enim. Fusce non lobortis justo. In eleifend turpis nec libero ultricies</div>
-                                </div>
-                            </div>
-                            <div class="clear"></div>
-                            <div class="empty-space col-xs-b30"></div>
-                        </div>
-                        <div class="comment-entry">
-                            <img class="icon" src="img/blog-avatar-1.jpg" alt="" />
-                            <div class="description">
-                                <div class="align">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class="h5 small"><b>CRISTIN MORIS</b></div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="simple-article small grey blog-light-color">June 12, 2015  at 14:02</div>
-                                        </div>
-                                        <div class="col-md-2 col-md-text-right">
-                                            <div class="simple-article small"><a href="#">Reply</a></div>
-                                        </div>
-                                    </div>
-                                    <div class="empty-space col-xs-b10"></div>
-                                    <div class="simple-article small grey">Nam sit amet metus et tellus interdum ullamcorper nec nec eros</div>
-                                </div>
-                            </div>
-                            <div class="clear"></div>
-                            <div class="empty-space col-xs-b30"></div>
-
-                            <div class="comment-entry">
-                                <img class="icon" src="img/blog-avatar-2.jpg" alt="" />
-                                <div class="description">
-                                    <div class="align">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="h5 small"><b>CRISTIN MORIS</b></div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="simple-article small grey blog-light-color">June 12, 2015  at 14:02</div>
-                                            </div>
-                                            <div class="col-md-2 col-md-text-right">
-                                                <div class="simple-article small"><a href="#">Reply</a></div>
-                                            </div>
-                                        </div>
-                                        <div class="empty-space col-xs-b10"></div>
-                                        <div class="simple-article small grey">Curabitur et ornare erat. Sed sit amet egestas enim. Fusce non lobortis justo. In eleifend turpis nec libero ultricies</div>
-                                    </div>
-                                </div>
-                                <div class="clear"></div>
-                                <div class="empty-space col-xs-b30"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="empty-space col-xs-b15 col-sm-b30"></div>
-                    <div class="h4 small text-center"><b>LEAVE A REPLY</b></div>
-                    <div class="empty-space col-xs-b15"></div>
-                    <form>
-                        <div class="row col-xs-b30">
-                            <div class="col-sm-6 col-xs-b30 col-sm-b0">
-                                <div class="input-wrapper">
-                                    <input name="name" class="input" type="text">
-                                    <label>Name</label>
-                                    <span></span>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="input-wrapper">
-                                    <input name="email" class="input" type="text">
-                                    <label>Email</label>
-                                    <span></span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-sm-12">
-                                <div class="input-wrapper">
-                                    <textarea name="message" class="input"></textarea>
-                                    <label>Message</label>
-                                    <span></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="empty-space col-xs-b40"></div>
-                        <div class="button type-3">submit<input type="submit"/></div>
-                    </form>
-                    <div class="empty-space col-xs-b55 col-sm-b110"></div>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row nopadding">
-            <div class="col-xs-4">
-                <a class="portfolio-detail-related-entry" href="#">
-                    <span class="background full-size" style="background-image: url(img/portfolio-36.jpg);"></span>
-                    <span class="text hidden-xs">
-                        <span class="wide-container align-left">
-                            <span class="tag"><span class="inline-indent"></span>photoshooting</span>
-                            <span class="h4 light"><b>LADY WHO WAITING</b></span>
-                        </span>
-                    </span>
-                </a>
-            </div>
-            <div class="col-xs-4">
-                <div class="portfolio-detail-related-entry">
-                    <a class="square-hamburger-icon" href="#">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </a>
-                </div>
-            </div>
-            <div class="col-xs-4">
-                <a class="portfolio-detail-related-entry" href="#">
-                    <span class="background full-size" style="background-image: url(img/portfolio-37.jpg);"></span>
-                    <span class="text hidden-xs">
-                        <span class="wide-container align-right">
-                            <span class="tag"><span class="inline-indent"></span>photoshooting</span>
-                            <span class="h4 light"><b>LADY IN BLACK</b></span>
-                        </span>
-                    </span>
-                </a>
-            </div>
-        </div>
-
-        <!-- FOOTER -->
-        <footer>
-        <div class="wide-container">
-          <div class="row">
-            <div class="col-md-6 col-xs-text-center col-md-text-left col-sm-b10 col-md-b0">
-              <div class="copyright">
-                <div class="simple-article small grey transparent">
-                  &copy; 2023 All rights reserved.
-                  <div class="developed-by">
-                    <i class="fa-solid fa-code"></i> with <i class="fa fa-heart"></i> by
-                    <a href="http://lindseyk.dev" target="blank">Lindsey.</a>
-                  </div>
-                </div>
-              </div>
-              <div class="empty-space col-xs-b20 col-md-b0"></div>
-            </div>
-            <div class="col-md-6 col-xs-text-center col-md-text-right">
-              <div class="follow">
-                <span class="title">Follow me:</span>
-                <a class="entry" href="https://www.linkedin.com/in/lindsey-howard" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a class="entry" href="https://www.facebook.com/codelikeagirl91" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a class="entry" href="https://www.github.com/codelikeagirl29" target="_blank"><i class="fa fa-github"></i></a>
-                <a class="entry" href="https://twitter.com/dev_lindseyk" target="_blank"><i class="fa fa-twitter"></i></a>
-                <a class="entry" href="https://stackoverflow.com/users/14072521/lindsey" target="_blank"><i class="fa fa-stack-overflow"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-
-    <script src="../js/jquery-2.1.4.min.js"></script>
-    <script src="../js/swiper.jquery.min.js"></script>
-    <script src="../js/jquery.mousewheel.min.js"></script>
-    <script src="../js/global.js"></script>
-
-</body>
+		<script src="../js/jquery-2.1.4.min.js"></script>
+		<script src="../js/swiper.jquery.min.js"></script>
+		<script src="../js/jquery.mousewheel.min.js"></script>
+		<script src="../js/global.js"></script>
+	</body>
 </html>
