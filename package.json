@@ -1,0 +1,17 @@
+{
+  "name": "modesto-v2",
+  "version": "1.0.0",
+  "description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/048429b1-e9af-4d93-80e6-944df4097a33/deploy-status)](https://app.netlify.com/sites/modern-cv-resume/deploys)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-config-standard-scss": "^10.0.0"
+  }
+}

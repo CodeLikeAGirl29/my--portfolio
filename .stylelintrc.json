@@ -1,0 +1,17 @@
+{
+    "extends": "stylelint-config-standard",
+    "rules": {
+        "indentation": 2,
+        "string-quotes": "double",
+        "no-duplicate-selectors": true,
+        "selector-attribute-operator-space-before": "never",
+        "selector-attribute-operator-space-after": "never",
+        "declaration-block-trailing-semicolon": "always",
+        "declaration-no-important": true,
+        "declaration-colon-space-before": "never",
+        "number-leading-zero": "always",
+        "function-url-quotes": "always",
+        "font-family-name-quotes": "always-where-recommended",
+        "no-descending-specificity": null
+    }
+}
