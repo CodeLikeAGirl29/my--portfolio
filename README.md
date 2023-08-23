@@ -8,6 +8,8 @@
 
 ![bootstrap](https://camo.githubusercontent.com/8d0e8bf4a315e73ce23e6d5e3193279d53d066717f7f806d7af7305d9334e7cb/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f7374796c653d666f722d7468652d6261646765266d6573736167653d426f6f74737472617026636f6c6f723d373935324233266c6f676f3d426f6f747374726170266c6f676f436f6c6f723d464646464646266c6162656c3d)
 
+![stylelint](https://img.shields.io/badge/stylelint-000?style=for-the-badge&logo=stylelint&logoColor=white)
+
 ## Project Overview:
 Create a professional and visually appealing web developer portfolio to showcase your skills, experience, and projects. The portfolio should effectively highlight your expertise in web development and provide potential clients or employers with a comprehensive understanding of your abilities.
 
@@ -66,10 +68,4 @@ Ensure the portfolio reflects your unique personality and style as a web develop
 Regularly update the portfolio with new projects and relevant information to keep it fresh and engaging.
 Incorporate any additional features or sections that you believe will enhance the portfolio's overall effectiveness.
 
-## Tech Used:
-
-![stylelint](https://img.shields.io/badge/stylelint-000?style=for-the-badge&logo=stylelint&logoColor=white)
-
-![css](https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white)
-
-![js](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white)
+---
