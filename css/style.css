@@ -362,7 +362,7 @@ body ::selection {
   background-size: cover;
   background-position: center top;
   background-attachment: fixed;
-  opacity: 0.5;
+  opacity: 0.;
 }
 
 body.mobile .fixed-background {
