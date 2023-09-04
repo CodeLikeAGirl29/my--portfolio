@@ -1,476 +1,426 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="format-detection" content="telephone=no" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, minimal-ui"
-      />
-    <!-- fonts collection 8 -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Inconsolata:400,700"
-      rel="stylesheet"
-      type="text/css"
-      />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
-      rel="stylesheet"
-      type="text/css"
-      />
-    <link
-      href="https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic"
-      rel="stylesheet"
-      type="text/css"
-      />
-      <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-           <link href="../css/normalize.css" rel="stylesheet" type="text/css" />
-    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link
-      href="../css/bootstrap.extension.css"
-      rel="stylesheet"
-      type="text/css"
-      />
-    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <link href="../css/style.css" rel="stylesheet" type="text/css" />
-    <link href="../css/swiper.css" rel="stylesheet" type="text/css" />
-    <script
-      src="https://kit.fontawesome.com/29b275fb0c.js"
-      crossorigin="anonymous"
-      ></script>
-    <!--[if lt IE 9]>
-    <link rel="stylesheet" type="text/css" href="css/ie8-and-down.css" />
-    <![endif]-->
-    <!--[if IE 9]>
-    <link href="css/ie9.css" rel="stylesheet" type="text/css" />
-    <![endif]-->
-    <link rel="shortcut icon" href="../img/favicon.ico" />
-    <!-- Open Graph / Facebook -->
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://lindseyk.dev/" />
-<meta property="og:title" content="lindseyk" />
-<meta property="og:description" content="Modern, minimalistic portfolio site" />
-<meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta property="twitter:url" content="https://lindseyk.dev/" />
-<meta property="twitter:title" content="lindseyk" />
-<meta property="twitter:description" content="Modern, minimalistic portfolio site" />
-<meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
-    <title>lindseyk</title>
-  </head>
-  <body class="fonts-8">
-    <!-- LOADER -->
-    <div id="loader-wrapper"></div>
-    <div class="overlay" data-rel="1">
-      <div class="animation-wrapper full-size"></div>
-      <div class="content-wrapper full-size">
-        <div class="cell-view page-height">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-2 col-xs-b30 col-sm-0">
-                <nav class="text-left clearfix">
-                  <ul>
-                    <li class="active">
-                      <a href="index.html">Home</a>
-                      <span class="toggle-icon"></span>
+		<!-- fonts collection 8 -->
+		<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+		<link
+			href="https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic"
+			rel="stylesheet"
+			type="text/css">
 
-                        </li>
+		<link href="../css/normalize.css" rel="stylesheet" type="text/css">
+		<link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link
+			href="../css/bootstrap.extension.css"
+			rel="stylesheet"
+			type="text/css">
+		<link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="../css/style.css" rel="stylesheet" type="text/css">
+		<link href="../css/swiper.css" rel="stylesheet" type="text/css">
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" type="text/css" href="css/ie8-and-down.css">
+		<![endif]-->
+		<!--[if IE 9]>
+			<link href="css/ie9.css" rel="stylesheet" type="text/css">
+		<![endif]-->
+		<link rel="shortcut icon" href="../img/favicon.svg">
+		<!-- Open Graph Facebook -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://lindseyk.dev/">
+		<meta property="og:title" content="lindseyk">
+		<meta
+			property="og:description"
+			content="Modern, minimalistic portfolio site">
+		<meta
+			property="og:image"
+			content="https://metatags.io/images/meta-tags.png">
 
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="about.html">About</a>
-                      <span class="toggle-icon"></span>
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image">
+		<meta property="twitter:url" content="https://lindseyk.dev/">
+		<meta property="twitter:title" content="lindseyk">
+		<meta
+			property="twitter:description"
+			content="Modern, minimalistic portfolio site">
+		<meta
+			property="twitter:image"
+			content="https://metatags.io/images/meta-tags.png">
+		<script
+			src="https://kit.fontawesome.com/29b275fb0c.js"
+			crossorigin="anonymous"
+		></script>
+  <title>lindseyk</title>
+</head>
 
-                    </li>
-                    <li>
-                      <a href="portfolio.html">Portfolio</a>
-                      <span class="toggle-icon"></span>
+<body class="fonts-8">
+  <!-- LOADER -->
+  <div id="loader-wrapper"></div>
+  <div class="overlay" data-rel="1">
+    <div class="animation-wrapper full-size"></div>
+    <div class="content-wrapper full-size">
+      <div class="cell-view page-height">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2 col-xs-b30 col-sm-0">
+              <nav class="text-left clearfix">
+                <ul>
+                  <li class="active">
+                    <a href="index.html">Home</a>
+                    <span class="toggle-icon"></span>
 
-                        </li>
-                        <li>
-                          <a href="detail.html">Projects Detail</a>
-                          <span class="toggle-icon"></span>
+                  </li>
 
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <a href="services1.html">Services</a>
-                      <span class="toggle-icon"></span>
+                </ul>
+                </li>
+                <li>
+                  <a href="about.html">About</a>
+                  <span class="toggle-icon"></span>
 
-                    </li>
-                    <li>
-                      <a href="blog1.html">Blog</a>
-                      <span class="toggle-icon"></span>
+                </li>
+                <li>
+                  <a href="portfolio.html">Portfolio</a>
+                  <span class="toggle-icon"></span>
 
-                        </li>
-                        <li>
-                          <a href="blogdetail1.html">Blog Detail</a>
-                          <span class="toggle-icon"></span>
+                </li>
+                <li>
+                  <a href="detail.html">Projects Detail</a>
+                  <span class="toggle-icon"></span>
 
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="megamenu-wrapper">
-                      <a href="#">Pages</a>
-                      <span class="toggle-icon"></span>
-                      <div class="megamenu clearfix">
-                        <div class="row">
-                          <div class="col-md-3">
-                            <a href="portfolio1.html" class="title"
-                              >Projects List</a
-                              >
-                            <span class="toggle-icon"></span>
+                </li>
+                </ul>
+                </li>
+                <li>
+                  <a href="services1.html">Services</a>
+                  <span class="toggle-icon"></span>
 
-                          </div>
-                          <div class="col-md-3">
-                            <a href=details.html class="title"
-                              >Projects Detail</a
-                              >
-                            <span class="toggle-icon"></span>
-                            <div class="rs-slide">
-                              <a href=details.html>Project 1</a>
-                              <a href="detail2.html">Project 2</a>
-                              <a href="detail3.html">Project 3</a>
-                              <a href="detail4.html">Project 4</a>
-                              <a href="detail5.html">Project 5</a>
-                            </div>
-                          </div>
-                          <div class="col-md-3">
-                            <a href="contacts1.html" class="title">Contact</a>
-                            <span class="toggle-icon"></span>
-                            <div class="rs-slide">
-                              <a href="contacts1.html">Contact #1</a>
-                              <a href="contacts2.html">Contact #2</a>
-                            </div>
-                          </div>
-                          <div class="col-md-3">
-                            <a href="contacts1.html" class="title"
-                              >Coming Soon</a
-                              >
-                            <span class="toggle-icon"></span>
+                </li>
+                <li>
+                  <a href="blog1.html">Blog</a>
+                  <span class="toggle-icon"></span>
 
-                          </div>
+                </li>
+                <li>
+                  <a href="blogdetail1.html">Blog Detail</a>
+                  <span class="toggle-icon"></span>
+
+                </li>
+                </ul>
+                </li>
+                <li class="megamenu-wrapper">
+                  <a href="#">Pages</a>
+                  <span class="toggle-icon"></span>
+                  <div class="megamenu clearfix">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <a href="portfolio1.html" class="title">Projects List</a>
+                        <span class="toggle-icon"></span>
+
+                      </div>
+                      <div class="col-md-3">
+                        <a href=details.html class="title">Projects Detail</a>
+                        <span class="toggle-icon"></span>
+                        <div class="rs-slide">
+                          <a href=details.html>Project 1</a>
+                          <a href="detail2.html">Project 2</a>
+                          <a href="detail3.html">Project 3</a>
+                          <a href="detail4.html">Project 4</a>
+                          <a href="detail5.html">Project 5</a>
                         </div>
                       </div>
-                    </li>
+                      <div class="col-md-3">
+                        <a href="contacts1.html" class="title">Contact</a>
+                        <span class="toggle-icon"></span>
+                        <div class="rs-slide">
+                          <a href="contacts1.html">Contact #1</a>
+                          <a href="contacts2.html">Contact #2</a>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <a href="contacts1.html" class="title">Coming Soon</a>
+                        <span class="toggle-icon"></span>
 
-                  </ul>
-                </nav>
-              </div>
-              <div
-                class="col-sm-6 col-md-4 col-md-offset-1 col-xs-b30 col-sm-0"
-                >
-                <div
-                  class="simple-article light transparent col-xs-b30 col-sm-b50"
-                  >
-                  <div class="h4 small">INFORMATION</div>
-                  <div class="empty-space col-xs-b10"></div>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud.
-                  </p>
-                </div>
-                <div
-                  class="simple-article light transparent col-xs-b30 col-sm-b50"
-                  >
-                  <div class="h4 small">CONTACT INFO</div>
-                  <div class="empty-space col-xs-b10"></div>
-                  <p>
-                    Email:
-                    <a
-                      class="mouseover-simple"
-                      href="mailto:lindseykdev@gmail.com"
-                      style="color: #fff"
-                      ><b>lindseykdev@gmail.com</b></a
-                      >
-                  </p>
-                  <p>
-                    Phone:
-                    <a
-                      class="mouseover-simple"
-                      href="tel:+18509607041"
-                      style="color: #fff"
-                      ><b>850.960.7041</b></a
-                      >
-                  </p>
-                </div>
-                <div class="h4 small light">FOLLOW ME</div>
-                <div class="empty-space col-xs-b15"></div>
-                <div class="follow">
-                  <a href="#" class="entry"><i class="fa fa-instagram"></i></a>
-                  <a href="#" class="entry"><i class="fa fa-facebook"></i></a>
-                  <a href="#" class="entry"
-                    ><i class="fa fa-pinterest-p"></i
-                    ></a>
-                  <a href="#" class="entry"><i class="fa fa-twitter"></i></a>
-                  <a href="#" class="entry"
-                    ><i class="fa fa-google-plus"></i
-                    ></a>
-                </div>
-              </div>
-              <div class="col-sm-6 col-md-4 col-md-offset-1">
-                <div class="twitter-entry col-xs-b15 col-sm-b30">
-                  <div class="row col-xs-b15">
-                    <div class="col-xs-6">
-                      <div class="date"><i>20 min ago</i></div>
-                    </div>
-                    <div class="col-xs-6 text-right">
-                      <i class="fa fa-twitter"></i>
+                      </div>
                     </div>
                   </div>
-                  <div class="simple-article light col-xs-b10">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                  </div>
-                  <a href="#" class="author">@modestodesign</a>
-                  <div class="col-xs-b10"></div>
-                  <a href="#" class="link"><i>https://www.youtube.com/</i></a>
-                </div>
+                </li>
 
+                </ul>
+              </nav>
+            </div>
+            <div class="col-sm-6 col-md-4 col-md-offset-1 col-xs-b30 col-sm-0">
+              <div class="simple-article light transparent col-xs-b30 col-sm-b50">
+                <div class="h4 small">INFORMATION</div>
+                <div class="empty-space col-xs-b10"></div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud.
+                </p>
               </div>
-            </div>
-          </div>
-        </div>
-        <a class="button-close"></a>
-      </div>
-    </div>
-    <div id="content-block">
-      <!-- HEADER -->
-      <header class="type-4 light fixed">
-        <div class="wide-container-fluid">
-          <div class="row">
-            <div class="col-xs-6 col-sm-2">
-              <a class="logo"><img src="../images/logo.png" alt="" /></a>
-            </div>
-            <div class="col-xs-6 col-sm-10 text-right">
-              <div class="hamburger-icon open-overlay" data-rel="1">
-                <span></span>
-                <span></span>
-                <span></span>
+              <div class="simple-article light transparent col-xs-b30 col-sm-b50">
+                <div class="h4 small">CONTACT INFO</div>
+                <div class="empty-space col-xs-b10"></div>
+                <p>
+                  Email:
+                  <a class="mouseover-simple" href="mailto:lindseykdev@gmail.com" style="color: #fff"><b>lindseykdev@gmail.com</b></a>
+                </p>
+                <p>
+                  Phone:
+                  <a class="mouseover-simple" href="tel:+18509607041" style="color: #fff"><b>850.960.7041</b></a>
+                </p>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="close-layer toggle-visibility">
-          <div class="button-close"></div>
-        </div>
-      </header>
-      <div class="contacts-wrapper-1">
-        <div class="container">
-          <div class="header-empty-space"></div>
-          <div class="empty-space col-xs-b25 col-sm-b50"></div>
-          <div class="row">
-            <div class="col-md-6 col-md-offset-3 text-center">
-              <div class="h2 light small"><b>CONTACT ME</b></div>
+              <div class="h4 small light">FOLLOW ME</div>
               <div class="empty-space col-xs-b15"></div>
-              <div class="simple-article large light transparent text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                semper elit nec justo auctor lacinia. Curabitur eleifendegesta
-              </div>
-            </div>
-          </div>
-          <div class="empty-space col-xs-b30 col-sm-b60"></div>
-          <div class="row">
-            <div class="col-sm-3">
-              <div class="contacts-entry">
-                <div class="h4 light small"><b>ADDRESS</b></div>
-                <div class="empty-space col-xs-b15"></div>
-                <div class="simple-article light transparent">
-                  West side.<br />
-                 Pensacola, Florida 32505
-                </div>
-              </div>
-              <div class="empty-space col-xs-b25 col-sm-b0"></div>
-            </div>
-            <div class="col-sm-3">
-              <div class="contacts-entry">
-                <div class="h4 light small"><b>PHONE</b></div>
-                <div class="empty-space col-xs-b15"></div>
-                <div class="simple-article light transparent">
-                  <a class="mouseover-simple" href="tel:+18509607041"
-                    >850.960.7041</a
-                    ><br />
-
-                </div>
-              </div>
-              <div class="empty-space col-xs-b25 col-sm-b0"></div>
-            </div>
-            <div class="col-sm-3">
-              <div class="contacts-entry">
-                <div class="h4 light small"><b>EMAIL</b></div>
-                <div class="empty-space col-xs-b15"></div>
-                <div class="simple-article light transparent">
-                  <a class="mouseover-simple" href="mailto:lindseykdev@gmail.com"
-                    >lindseykdev@gmail.com</a
-                    ><br />
-
-                    >
-                </div>
-              </div>
-              <div class="empty-space col-xs-b25 col-sm-b0"></div>
-            </div>
-            <div class="col-sm-3">
-              <div class="contacts-entry">
-                <div class="h4 light small"><b>FOLLOW ME</b></div>
-                <div class="empty-space col-xs-b15"></div>
-                <div class="follow">
-                  <a class="entry" href="#"><i class="fa fa-instagram"></i></a>
-                  <a class="entry" href="#"><i class="fa fa-facebook"></i></a>
-                  <a class="entry" href="#"
-                    ><i class="fa fa-pinterest-p"></i
-                    ></a>
-                  <a class="entry" href="#"><i class="fa fa-twitter"></i></a>
-                  <a class="entry" href="#"
-                    ><i class="fa fa-google-plus"></i
-                    ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="empty-space col-xs-b55 col-sm-b110"></div>
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center">
-              <div class="h4 light"><b>HAVE A QUESTION?</b></div>
-            </div>
-          </div>
-          <div class="empty-space col-xs-b90 col-sm-b120"></div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="contacts-form-1-align">
-          <div class="row">
-            <div class="col-xs-10 col-xs-offset-1">
-              <div class="empty-space col-xs-b60"></div>
-              <form action="https://formspree.io/f/xoqzngno" method="POST" class="contact-form">
-                <div class="row col-xs-b30">
-                  <div class="col-sm-6 col-xs-b30 col-sm-b0">
-                    <div class="input-wrapper">
-                      <input name="name" class="input" type="text" />
-                      <label>Name:</label>
-                      <span></span>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="input-wrapper">
-                      <input name="email" class="input" type="text" />
-                      <label>Email:</label>
-                      <span></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="row col-xs-b30">
-                  <div class="col-sm-12">
-                    <div class="input-wrapper">
-                      <input name="subject" class="input" type="text" />
-                      <label>Subject:</label>
-                      <span></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="input-wrapper">
-                      <textarea name="message" class="input"></textarea>
-                      <label>Message:</label>
-                      <span></span>
-                    </div>
-                  </div>
-                </div>
-                <div class="empty-space col-xs-b40"></div>
-                <div class="text-center">
-                  <div class="button type-3">
-                    submit message<input type="submit" />
-                  </div>
-                </div>
-              </form>
-              <div class="empty-space col-xs-b60"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="map-wrapper">
-        <div
-          id="map-canvas"
-          class="full-width"
-          data-lat="30.421309"
-          data-lng="-87.216911"
-          data-zoom="14"
-          ></div>
-      </div>
-      <div class="addresses-block hidden">
-        <a
-          class="marker"
-          data-lat="30.421309"
-          data-lng="-87.216911"
-          data-string="Pensacola, Florida"
-          ></a>
-      </div>
-      <!-- FOOTER -->
-       <footer>
-        <div class="wide-container">
-          <div class="row">
-            <div class="col-md-6 col-xs-text-center col-md-text-left col-sm-b10 col-md-b0">
-              <div class="copyright">
-                <div class="simple-article small grey transparent">
-                  &copy; 2023 All rights reserved.
-                  <div class="developed-by">
-                    <i class="fa-solid fa-code"></i> with <i class="fa fa-heart"></i> by
-                    <a href="http://lindseyk.dev" target="blank">Lindsey.</a>
-                  </div>
-                </div>
-              </div>
-              <div class="empty-space col-xs-b20 col-md-b0"></div>
-            </div>
-            <div class="col-md-6 col-xs-text-center col-md-text-right">
               <div class="follow">
-                <span class="title">Follow me:</span>
-                <a class="entry" href="https://www.linkedin.com/in/lindsey-howard" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a class="entry" href="https://www.facebook.com/codelikeagirl91" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a class="entry" href="https://www.github.com/codelikeagirl29" target="_blank"><i class="fa fa-github"></i></a>
-                <a class="entry" href="https://twitter.com/dev_lindseyk" target="_blank"><i class="fa fa-twitter"></i></a>
-                <a class="entry" href="https://stackoverflow.com/users/14072521/lindsey" target="_blank"><i class="fa fa-stack-overflow"></i></a>
+                <a href="#" class="entry"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="entry"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="entry"><i class="fa fa-pinterest-p"></i></a>
+                <a href="#" class="entry"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="entry"><i class="fa fa-google-plus"></i></a>
               </div>
             </div>
-          </div>
-        </div>
-      </footer>
-    </div>
-    <div class="text-popup overlay">
-      <div class="animation-wrapper full-size"></div>
-      <div class="content-wrapper full-size">
-        <div class="cell-view page-height">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 col-md-offset-3 text-center">
-                <div class="h2 small light">
-                  <b class="text-popup-title"></b>
+            <div class="col-sm-6 col-md-4 col-md-offset-1">
+              <div class="twitter-entry col-xs-b15 col-sm-b30">
+                <div class="row col-xs-b15">
+                  <div class="col-xs-6">
+                    <div class="date"><i>20 min ago</i></div>
+                  </div>
+                  <div class="col-xs-6 text-right">
+                    <i class="fa fa-twitter"></i>
+                  </div>
                 </div>
-                <div class="empty-space col-xs-b15"></div>
-                <div
-                  class="simple-article light transparent text-popup-message"
-                  ></div>
+                <div class="simple-article light col-xs-b10">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.
+                </div>
+                <a href="#" class="author">@modestodesign</a>
+                <div class="col-xs-b10"></div>
+                <a href="#" class="link"><i>https://www.youtube.com/</i></a>
               </div>
+
             </div>
           </div>
         </div>
       </div>
       <a class="button-close"></a>
     </div>
-    <script src="../js/jquery-2.1.4.min.js"></script>
-    <script src="../js/swiper.jquery.min.js"></script>
-    <script src="../js/jquery.mousewheel.min.js"></script>
-    <script src="../js/global.js"></script>
-    <!-- MAP -->
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src="../js/map.js"></script>
-    <!-- CONTACT -->
-    <script src="../js/contact.form.js"></script>
-  </body>
+  </div>
+  <div id="content-block">
+    <!-- HEADER -->
+    <header class="type-4 light fixed">
+      <div class="wide-container-fluid">
+        <div class="row">
+          <div class="col-xs-6 col-sm-2">
+            <a class="logo"><img src="../images/logo.png" alt="" /></a>
+          </div>
+          <div class="col-xs-6 col-sm-10 text-right">
+            <div class="hamburger-icon open-overlay" data-rel="1">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="close-layer toggle-visibility">
+        <div class="button-close"></div>
+      </div>
+    </header>
+    <div class="contacts-wrapper-1">
+      <div class="container">
+        <div class="header-empty-space"></div>
+        <div class="empty-space col-xs-b25 col-sm-b50"></div>
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center">
+            <div class="h2 light small"><b>CONTACT ME</b></div>
+            <div class="empty-space col-xs-b15"></div>
+            <div class="simple-article large light transparent text-center">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              semper elit nec justo auctor lacinia. Curabitur eleifendegesta
+            </div>
+          </div>
+        </div>
+        <div class="empty-space col-xs-b30 col-sm-b60"></div>
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="contacts-entry">
+              <div class="h4 light small"><b>ADDRESS</b></div>
+              <div class="empty-space col-xs-b15"></div>
+              <div class="simple-article light transparent">
+                West side.<br />
+                Pensacola, Florida 32505
+              </div>
+            </div>
+            <div class="empty-space col-xs-b25 col-sm-b0"></div>
+          </div>
+          <div class="col-sm-3">
+            <div class="contacts-entry">
+              <div class="h4 light small"><b>PHONE</b></div>
+              <div class="empty-space col-xs-b15"></div>
+              <div class="simple-article light transparent">
+                <a class="mouseover-simple" href="tel:+18509607041">850.960.7041</a><br />
+
+              </div>
+            </div>
+            <div class="empty-space col-xs-b25 col-sm-b0"></div>
+          </div>
+          <div class="col-sm-3">
+            <div class="contacts-entry">
+              <div class="h4 light small"><b>EMAIL</b></div>
+              <div class="empty-space col-xs-b15"></div>
+              <div class="simple-article light transparent">
+                <a class="mouseover-simple" href="mailto:lindseykdev@gmail.com">lindseykdev@gmail.com</a><br />
+
+                >
+              </div>
+            </div>
+            <div class="empty-space col-xs-b25 col-sm-b0"></div>
+          </div>
+          <div class="col-sm-3">
+            <div class="contacts-entry">
+              <div class="h4 light small"><b>FOLLOW ME</b></div>
+              <div class="empty-space col-xs-b15"></div>
+              <div class="follow">
+                <a class="entry" href="#"><i class="fa fa-instagram"></i></a>
+                <a class="entry" href="#"><i class="fa fa-facebook"></i></a>
+                <a class="entry" href="#"><i class="fa fa-pinterest-p"></i></a>
+                <a class="entry" href="#"><i class="fa fa-twitter"></i></a>
+                <a class="entry" href="#"><i class="fa fa-google-plus"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="empty-space col-xs-b55 col-sm-b110"></div>
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 text-center">
+            <div class="h4 light"><b>HAVE A QUESTION?</b></div>
+          </div>
+        </div>
+        <div class="empty-space col-xs-b90 col-sm-b120"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="contacts-form-1-align">
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-1">
+            <div class="empty-space col-xs-b60"></div>
+            <form action="https://formspree.io/f/xoqzngno" method="POST" class="contact-form">
+              <div class="row col-xs-b30">
+                <div class="col-sm-6 col-xs-b30 col-sm-b0">
+                  <div class="input-wrapper">
+                    <input name="name" class="input" type="text" />
+                    <label>Name:</label>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="input-wrapper">
+                    <input name="email" class="input" type="text" />
+                    <label>Email:</label>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row col-xs-b30">
+                <div class="col-sm-12">
+                  <div class="input-wrapper">
+                    <input name="subject" class="input" type="text" />
+                    <label>Subject:</label>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="input-wrapper">
+                    <textarea name="message" class="input"></textarea>
+                    <label>Message:</label>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+              <div class="empty-space col-xs-b40"></div>
+              <div class="text-center">
+                <div class="button type-3">
+                  submit message<input type="submit" />
+                </div>
+              </div>
+            </form>
+            <div class="empty-space col-xs-b60"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="map-wrapper">
+      <div id="map-canvas" class="full-width" data-lat="30.421309" data-lng="-87.216911" data-zoom="14"></div>
+    </div>
+    <div class="addresses-block hidden">
+      <a class="marker" data-lat="30.421309" data-lng="-87.216911" data-string="Pensacola, Florida"></a>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+      <div class="wide-container">
+        <div class="row">
+          <div class="col-md-6 col-xs-text-center col-md-text-left col-sm-b10 col-md-b0">
+            <div class="copyright">
+              <div class="simple-article small grey transparent">
+                &copy; 2023 All rights reserved.
+                <div class="developed-by">
+                  <i class="fa-solid fa-code"></i> with <i class="fa fa-heart"></i> by
+                  <a href="http://lindseyk.dev" target="blank">Lindsey.</a>
+                </div>
+              </div>
+            </div>
+            <div class="empty-space col-xs-b20 col-md-b0"></div>
+          </div>
+          <div class="col-md-6 col-xs-text-center col-md-text-right">
+            <div class="follow">
+              <span class="title">Follow me:</span>
+              <a class="entry" href="https://www.linkedin.com/in/lindsey-howard" target="_blank"><i class="fa fa-linkedin"></i></a>
+              <a class="entry" href="https://www.facebook.com/codelikeagirl91" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a class="entry" href="https://www.github.com/codelikeagirl29" target="_blank"><i class="fa fa-github"></i></a>
+              <a class="entry" href="https://twitter.com/dev_lindseyk" target="_blank"><i class="fa fa-twitter"></i></a>
+              <a class="entry" href="https://stackoverflow.com/users/14072521/lindsey" target="_blank"><i class="fa fa-stack-overflow"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <div class="text-popup overlay">
+    <div class="animation-wrapper full-size"></div>
+    <div class="content-wrapper full-size">
+      <div class="cell-view page-height">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+              <div class="h2 small light">
+                <b class="text-popup-title"></b>
+              </div>
+              <div class="empty-space col-xs-b15"></div>
+              <div class="simple-article light transparent text-popup-message"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="button-close"></a>
+  </div>
+  <script src="../js/jquery-2.1.4.min.js"></script>
+  <script src="../js/swiper.jquery.min.js"></script>
+  <script src="../js/jquery.mousewheel.min.js"></script>
+  <script src="../js/global.js"></script>
+  <!-- MAP -->
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="../js/map.js"></script>
+  <!-- CONTACT -->
+  <script src="../js/contact.form.js"></script>
+</body>
+
 </html>
