@@ -17,7 +17,7 @@ Create a professional and visually appealing web developer portfolio to showcase
 
 > Check out the project [here](https://modern-cv-resume.netlify.app/)
 
-[![CodeFactor](https://www.codefactor.io/repository/github/codelikeagirl29/modern-cv/badge)](https://www.codefactor.io/repository/github/codelikeagirl29/modern-cv)
+[![CodeFactor](https://www.codefactor.io/repository/github/codelikeagirl29/my--portfolio/badge)](https://www.codefactor.io/repository/github/codelikeagirl29/my--portfolio)
 
 Objectives:
 
