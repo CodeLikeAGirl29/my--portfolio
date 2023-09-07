@@ -1448,7 +1448,7 @@ p.my-title {
 
 .logo {
   display: inline-block;
-  height: 90px;
+  height: 140px;
   line-height: 50px;
   margin-top: -20px;
   position: relative;
@@ -1459,7 +1459,7 @@ p.my-title {
 .logo img {
   display: inline-block;
   vertical-align: middle;
-  max-height: 50px;
+  max-height: 80px;
   width: auto;
   top: -2px;
   position: relative;
@@ -1518,6 +1518,26 @@ nav {
   nav > ul > li:hover > a, nav > ul > li.active > a {
     color: #444;
   }
+
+  li.active {
+    border-bottom:#001737 solid 1px;
+  }
+
+  .nav-link::before {
+    transition: 300ms;
+    height: 2px;
+    content: "";
+  }
+
+  .nav-link-ltr::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+  width: 100%;
+}
+
 
   nav > ul ul {
     position: absolute;
@@ -5612,7 +5632,7 @@ body.loaded .homepage-2-2-slider .swiper-slide-active .description {
 }
 
 .homepage-portfolio-preview-1 {
-  max-width: 570px;
+  max-width: 610px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
