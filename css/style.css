@@ -1,5 +1,6 @@
 /* stylelint-disable selector-pseudo-class-no-unknown */
 /* stylelint-disable color-function-notation */
+
 /* ------------------------------------------------------------------------------------------------------------------------------- */
 
 /* -------------------------------------------------------- */
@@ -2836,7 +2837,7 @@ footer.light .copyright a {
 .follow a {
   border-radius: 50%;
   text-decoration:none;
-  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 10px 15px rgba(0, 0, 0 / 30%);
   background: linear-gradient(0deg, #ddd, #fff);
   transition: 0.5s;
 }
@@ -3954,6 +3955,7 @@ body.min-height .homepage-4-slider-navigation.right {
   top: 0;
 }
 
+/* stylelint-disable-next-line selector-class-pattern */
 .tilt__back, .tilt__front {
   width: 100%;
   height: 100%;
@@ -6542,10 +6544,6 @@ textarea:focus:input-placeholder {
   color: transparent;
 }
 
-textarea:focus:input-placeholder {
-  color: transparent;
-}
-
 textarea:focus::placeholder {
   color: transparent;
 }
@@ -6585,6 +6583,7 @@ textarea:focus:placeholder {
   background-size: cover;
   background-position: center top;
   position: relative;
+  background-image: url("../images/heroimg.png");
 }
 
 .contacts-wrapper-2 .cell-view {
