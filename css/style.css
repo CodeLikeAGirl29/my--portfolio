@@ -1,67 +1,68 @@
 /* stylelint-disable selector-pseudo-class-no-unknown */
 /* stylelint-disable color-function-notation */
 
-/* ------------------------------------------------------------------------------------------------------------------------------- */
-
+/*
 /* -------------------------------------------------------- */
-
 /* TABLE OF CONTENTS: */
-
 /* -------------------------------------------------------- */
 
 /* 01 - RESET STYLES */
-
 /* 02 - GLOBAL SETTINGS */
-
 /* 03 - HEADER */
-
 /* 04 - OVERLAY MENUS */
-
 /* 05 - FOOTER */
-
 /* 06 - HOMEPAGE 1 */
-
+/* 07 - HOMEPAGE 2 */
+/* 08 - HOMEPAGE 3 */
+/* 09 - HOMEPAGE 8 */
+/* 10 - HOMEPAGE 4 */
+/* 11 - HOMEPAGE 5 */
+/* 12 - HOMEPAGE 6 */
+/* 13 - HOMEPAGE 7 */
+/* 14 - HOMEPAGE 9 */
+/* 15 - HOMEPAGE 10 */
+/* 16 - HOMEPAGE 12 */
+/* 17 - HOMEPAGE 13 */
+/* 18 - HOMEPAGE 14 */
 /* 19 - HOMEPAGE 2.1 */
-
+/* 21 - HOMEPAGE 2.3 */
+/* 22 - HOMEPAGE 2.4 */
+/* 23 - HOMEPAGE 2.5 */
+/* 24 - HOMEPAGE 2.6 */
+/* 25 - HOMEPAGE VIDEO */
 /* 26 - ABOUT 1 */
-
+/* 27 - ABOUT 2 */
+/* 28 - ABOUT 3 */
 /* 29 - SERVICES 1 */
-
+/* 30 - SERVICES 2 */
+/* 31 - SERVICES 3 */
+/* 32 - SERVICES 4 */
 /* 33 - CONTACTS 1 */
-
 /* 34 - CONTACTS 2 */
-
 /* 35 - PORTFOLIO 1 */
-
+/* 36 - PORTFOLIO 2 */
+/* 37 - PORTFOLIO 3 */
+/* 38 - PORTFOLIO 4 */
+/* 39 - PORTFOLIO 5 */
+/* 40 - PORTFOLIO 6 */
+/* 41 - PORTFOLIO 7 */
 /* 42 - PORTFOLIO DETAIL 1 */
-
 /* 43 - PORTFOLIO DETAIL 2 */
-
 /* 44 - PORTFOLIO DETAIL 3 */
-
 /* 45 - BLOG 1 */
-
 /* 46 - BLOG 2 */
-
 /* 47 - BLOG 3 */
-
 /* 48 - BLOG 4 */
-
 /* 49 - BLOG DETAIL 1 */
-
 /* 50 - BLOG DETAIL 2 */
-
 /* 51 - BLOG DETAIL 3 */
-
+/* 52 - TEASER 1 */
+/* 53 - TEASER 2 */
 /* 54 - MEDIA QUERIES */
-
 /* 55 - CSS ANIMATIONS */
-
-/* ------------------------------------------------------------------------------------------------------------------------------- */
-
+*-------------------------------------------------------------------------------------------------------------------------------*/
 /* 01 - RESET STYLES */
-
-/* ------------------------------------------------------------------------------------------------------------------------------- */
+/*-------------------------------------------------------------------------------------------------------------------------------*/
 html {
   overflow-y: scroll;
 }
@@ -201,7 +202,7 @@ blockquote .small, blockquote footer, blockquote small {
 
 .wide-container {
   margin: 0 auto;
-  padding: 0 150px;
+  padding: 0 100px;
   height: 100%;
   position: relative;
 }
@@ -2593,6 +2594,14 @@ body.mobile .overlay.frame.active {
 .overlay nav > ul > li:nth-child(4) > ul, .overlay nav > ul > li:nth-child(5) > ul, .overlay nav > ul > li:nth-child(6) > ul, .overlay nav > ul > li:nth-child(7) > ul, .overlay nav > ul > li:nth-child(8) > ul {
   top: auto;
   bottom: 0;
+}
+
+.fa-link {
+  padding-top: 10px;
+}
+
+.fa-link:hover {
+  color: blue;
 }
 
 .overlay .button-close {
