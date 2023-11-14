@@ -1,6 +1,6 @@
 # Project Brief: My Professional Portfolio
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/048429b1-e9af-4d93-80e6-944df4097a33/deploy-status)](https://app.netlify.com/sites/modern-cv-resume/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/448b924b-14d4-4cef-864c-6bf4b981ccb3/deploy-status)](https://app.netlify.com/sites/linds-portfolio/deploys)
 
 ![js](https://camo.githubusercontent.com/3aaee8bf7885dcf0cea8a5647c4514b7d800b1a730d38bce7dadf6bff883378d/68747470733a2f2f696d672e736869656c64732e696f2f7374617469632f76313f7374796c653d666f722d7468652d6261646765266d6573736167653d4a61766153637269707426636f6c6f723d323232323232266c6f676f3d4a617661536372697074266c6f676f436f6c6f723d463744463145266c6162656c3d)
 
