@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="Portfolio content expander and details viewer plugin">
+	<meta name="author" content="flGravity">
+
+	<!-- Mobile Specific Metas
+	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+	================================================== -->
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/skeleton.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/isotope.css">
+	<link rel="stylesheet" href="../css/colio.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic" rel="stylesheet" type="text/css" />
+
+    <link href="../css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <link href="../css/swiper.css" rel="stylesheet" type="text/css" />
+
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- JS
+	================================================== -->
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="../js/jquery.scrollUp.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.isotope.min.js"></script>
+	<script type="text/javascript" src="../js/jquery.colio.min.js"></script>
+
+
+	<!-- Colio Black Theme
+	================================================== -->
+	<link rel="stylesheet" href="../colio-black/style.css" />
+	<link rel="stylesheet" href="../colio-black/fancybox/jquery.fancybox.css" />
+	<script type="text/javascript" src="../colio-black/fancybox/jquery.fancybox.js"></script>
+
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			// "scrollTop" plugin
+			$.scrollUp();
+
+			// "colio" plugin
+			$('.portfolio .list').colio({
+				id: 'demo_1',
+				theme: 'black',
+				placement: 'inside',
+				hiddenItems: '.isotope-hidden',
+				onContent: function(content){
+					// init "fancybox" plugin
+					$('.fancybox', content).fancybox();
+				}
+			});
+
+			// "isotope" plugin
+			var filter = '*', isotope_run = function(f) {
+				var list = $('.portfolio .list').isotope({layoutMode : 'fitRows', filter: f});
+				window.setTimeout(function(){
+					list.trigger('colio','excludeHidden');
+				}, 25);
+			};
+
+			$('.portfolio .filters a').click(function(){
+				$(this).addClass('filter-active').siblings().removeClass('filter-active');
+				var href = $(this).attr('href').substr(1);
+				filter = href ? '.' + href : '*';
+				isotope_run(filter);
+				return false;
+			});
+
+			isotope_run(filter);
+
+		});
+	</script>
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="../images/favicon.ico">
+	<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png">
+
+  <style>
+body {
+  font: 400 1em/1.5 "Neuton";
+  background: #090d00;
+  color: rgba(255, 255, 255, 0.25);
+  text-align: center;
+  margin: 0;
+}
+
+p {
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  display: inline-block;
+  border: 4px double rgba(255, 255, 255, 0.25);
+  border-width: 4px 0;
+  padding: 1.5em 0em;
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  width: 40em;
+  margin: 0 0 0 -20em;
+}
+p span {
+  font: 700 4em/1 "Oswald", sans-serif;
+  letter-spacing: 0;
+  padding: 0.25em 0 0.325em;
+  display: block;
+  margin: 0 auto;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  /* Clip Background Image */
+  background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
+  -webkit-background-clip: text;
+  background-clip: text;
+  /* Animate Background Image */
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: aitf 80s linear infinite;
+  /* Activate hardware acceleration for smoother animations */
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+}
+
+/* Animate Background Image */
+@-webkit-keyframes aitf {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+    </style>
+
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+	<div class="container">
+
+		<header class="sixteen columns main-header">
+
+			<h1>projects</h1>
+
+		</header><!-- header -->
+
+		<!-- SPACER --> <div class="spacer"></div>
+
+
+		<div class="ten columns">
+			<p><em>This is a collection of my favorite projects.</em></p>
+
+			<nav class="nav-links">
+				<a href="index.html">Home</a> /
+				<a href="index_white.html">White Theme</a> /
+				<a href="docs/index.html">Documentation</a> /
+
+			</nav><!-- nav links -->
+
+		</div><!-- ten col -->
+
+
+		<!-- SPACER --> <div class="spacer"></div>
+
+
+		<div class="sixteen columns">
+
+			<div class="portfolio clearfix">
+
+				<div class="filters">
+					<a href="#" class="filter-active">All</a>
+					<a href="#design">Web Design</a>
+					<a href="#inspiration">Inspiration</a>
+				</div><!-- filters -->
+
+				<ul class="list">
+
+					<li class="inspiration"  data-content="#colio_c1">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#">View Project</a>
+							</div>
+							<img src="../images/projects/expenses-redux.png" alt="Pic"/>
+						</div>
+						<h4><a class="colio-link" href="#">Redux Expenses</a></h4>
+						<p>Few words that describe this work</p>
+					</li>
+
+					<li class="design inspiration" data-content="#colio_c2">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#">View Project</a>
+							</div>
+							<img src="../images/projects/Scrimba.png" alt="Pic"/>
+						</div>
+						<h4><a class="colio-link" href="#">Projects Dir</a></h4>
+						<p>Few words that describe this work</p>
+					</li>
+
+					<li class="design inspiration" data-content="#colio_c1">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#">View Project</a>
+							</div>
+							<img src="../images/projects/visit-fl.png" alt="Pic"/>
+						</div>
+						<h4><a class="colio-link" href="#">Visit Florida</a></h4>
+						<p>Few words that describe this work</p>
+					</li>
+
+					<li class="design" data-content="#colio_c2">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#">View Project</a>
+							</div>
+							<img src="../images/projects/Ocean-Odyssey.png" alt="Pic"/>
+						</div>
+						<h4><a class="colio-link" href="#">Ocean Odyssey</a></h4>
+						<p>Few words that describe this work</p>
+					</li>
+
+					<li class="design inspiration" data-content="#colio_c1">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#">View Project</a>
+							</div>
+							<img src="../images/projects/lindseyk.dev.png" alt="Pic"/>
+						</div>
+						<h4><a class="colio-link" href="#">React Portfolio</a></h4>
+						<p>Few words that describe this work</p>
+					</li>
+
+					<li class="inspiration" data-content="#colio_c2">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#">View Project</a>
+							</div>
+							<img src="../images/projects/BMW-Blog.png" alt="Pic"/>
+						</div>
+						<h4><a class="colio-link" href="#">BMW Blog</a></h4>
+						<p>Few words that describe this work</p>
+					</li>
+
+					<li class="design" data-content="#colio_c1">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#">View Project</a>
+							</div>
+							<img src="../images/projects/cityTours.png" alt="Pic"/>
+						</div>
+						<h4><a class="colio-link" href="#">City Tours</a></h4>
+						<p>Few words that describe this work</p>
+					</li>
+
+					<li class="design inspiration" data-content="#colio_c2">
+						<div class="thumb">
+							<div class="view">
+								<a class="button colio-link" href="#">View Project</a>
+							</div>
+							<img src="../images/projects/gitprofile.png" alt="Pic"/>
+						</div>
+						<h4><a class="colio-link" href="#">GitProfile</a></h4>
+						<p>Few words that describe this work</p>
+					</li>
+
+				</ul><!-- list -->
+
+			</div><!-- portfolio -->
+
+
+			<div id="colio_c1" class="colio-content">
+
+				<div class="main">
+
+					<h3>This is "Colio"</h3>
+					<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+					<a class="visit-link" href="http://codecanyon.net">Visit Site</a>
+
+				</div><!-- main -->
+
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" href="pictures/pic2.jpg">
+								<img src="pictures/pic2.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" href="pictures/pic3.jpg">
+								<img src="pictures/pic3.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" href="pictures/pic5.jpg">
+								<img src="pictures/pic5.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+
+			</div><!-- colio-content # colio_c1 -->
+
+
+			<div id="colio_c2" class="colio-content">
+
+				<div class="main">
+					<h3>Portfolio expanding plugin</h3>
+
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo <a href="http://google.com">inventore veritatis</a> et quasi architecto beatae vitae dicta sunt explicabo.</p>
+
+<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+
+					<ul class="social">
+						<li><a class="facebook" href="http://facebook.com">Facebook</a></li>
+						<li><a class="twitter" href="http://twitter.com">Twitter</a></li>
+						<li><a class="google" href="http://google.com">Google</a></li>
+					</ul>
+
+				</div><!-- main -->
+
+				<div class="side">
+					<ul class="feed">
+						<li>
+							<a class="fancybox" href="pictures/pic1.jpg">
+								<img src="pictures/pic1.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" href="pictures/pic2.jpg">
+								<img src="pictures/pic2.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" href="pictures/pic3.jpg">
+								<img src="pictures/pic3.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" href="pictures/pic4.jpg">
+								<img src="pictures/pic4.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" href="pictures/pic5.jpg">
+								<img src="pictures/pic5.jpg" alt="">
+							</a>
+						</li>
+						<li>
+							<a class="fancybox" href="pictures/pic1.jpg">
+								<img src="pictures/pic1.jpg" alt="">
+							</a>
+						</li>
+					</ul>
+				</div><!-- side -->
+
+			</div><!-- colio-content # colio_c2 -->
+
+
+		<!-- SPACER --> <div class="spacer"></div>
+
+
+	      <!-- FOOTER -->
+      	<footer class="sixteen columns">
+           <div class="wide-container-fluid wide-paddings">
+          <div class="row">
+            <div class="col-md-6 col-xs-text-center col-md-text-left col-sm-b10 col-md-b0">
+              <div class="copyright">
+                <div class="simple-article small grey transparent">
+                  &copy; 2023 All rights reserved.
+                  <div class="developed-by">
+                    <i class="fa-solid fa-code"></i> with <i class="fa fa-heart"></i> by
+                    <a href="http://lindseyk.dev" target="blank">Lindsey.</a>
+                  </div>
+                </div>
+              </div>
+              <div class="empty-space col-xs-b20 col-md-b0"></div>
+            </div>
+
+            <div class="col-md-6 col-xs-text-center col-md-text-right">
+              <div class="follow">
+                <span class="title">Follow me:</span>
+                <a class="entry" href="https://www.linkedin.com/in/lindsey-howard" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a class="entry" href="https://www.facebook.com/codelikeagirl91" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a class="entry" href="https://www.github.com/codelikeagirl29" target="_blank"><i class="fa fa-github"></i></a>
+                <a class="entry" href="https://twitter.com/dev_lindseyk" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a class="entry" href="https://stackoverflow.com/users/14072521/lindsey" target="_blank"><i class="fa fa-stack-overflow"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+		</footer><!-- footer -->
+
+
+	</div><!-- container -->
+
+</body>
+</html>

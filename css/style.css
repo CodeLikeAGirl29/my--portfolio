@@ -7660,13 +7660,13 @@ textarea:focus:placeholder {
   color: #b5b5b5;
 }
 
-.list {
+.blog-list {
   margin: 0;
   padding-left: 1.2rem;
   margin-top: 20px;
 }
 
-.list li {
+.blog-list li {
   position: relative;
   list-style-type: none;
   padding-left: 2rem;
@@ -7674,7 +7674,7 @@ textarea:focus:placeholder {
   line-height: 1.1;
 }
 
-.list li::before {
+.blog-list li::before {
   content: "";
   display: block;
   position: absolute;
