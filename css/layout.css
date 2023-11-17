@@ -19,14 +19,14 @@
 ================================================== */
 	
 body {
-	background: #f8f8f8;
-	color: #666;
+  background: #f8f8f8;
+  color: #666;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: HelveticaNeue, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-weight: bold;
-	color: #444;
+  font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  color: #444;
 }
 
 h1 { font-size: 30px; line-height: 35px; margin-bottom: 21px; }
@@ -34,11 +34,11 @@ h2 { font-size: 21px; line-height: 28px; margin-bottom: 14px; text-transform: up
 h3 { font-size: 18px; line-height: 21px; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.02em; }
 h4 { font-size: 14px; line-height: 18px; margin-bottom: 7px; text-transform: uppercase; letter-spacing: 0.02em; }
 
-a, a:visited { color: #444; text-decoration: underline; outline: 0; -webkit-transition: color .1s; -moz-transition: color .1s; -o-transition: color .1s; transition: color .1s; }
+a, a:visited { color: #444; text-decoration: underline; outline: 0; transition: color 0.1s; }
 a:hover, a:focus { color: #999; }
 p a, p a:visited { line-height: inherit; }
 
-p { margin: 0 0 21px 0; }
+p { margin: 0 0 21px; }
 
 li { line-height: 21px; margin-bottom: 7px; }
 
@@ -49,20 +49,16 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-	margin: 0 0 14px;
-	padding: 7px 13px;
-	border: none;
-	-webkit-border-radius: 5px;
-	border-radius: 5px;
-	background: #ff5452;
-	color: #fff!important;
-	font-size: 13px;
-	line-height: 21px;
-	text-shadow: -1px 0 0 rgba(0,0,0,0.2);
-	-webkit-transition: background .1s;
-	-moz-transition: background .1s;
-	-o-transition: background .1s;
-	transition: background .1s;
+  margin: 0 0 14px;
+  padding: 7px 13px;
+  border: none;
+  border-radius: 5px;
+  background: #ff5452;
+  color: #fff!important;
+  font-size: 13px;
+  line-height: 21px;
+  text-shadow: -1px 0 0 rgb(0 0 0 / 20%);
+  transition: background 0.1s;
 }
 
 .button:hover,
@@ -70,8 +66,8 @@ button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover {
-	border: none;
-	background: #f2504e;
+  border: none;
+  background: #f2504e;
 }
 
 .button:active,
@@ -79,8 +75,8 @@ button:active,
 input[type="submit"]:active,
 input[type="reset"]:active,
 input[type="button"]:active {
-	border: none;
-	background: #f2504e;
+  border: none;
+  background: #f2504e;
 }
 
 
@@ -88,223 +84,215 @@ input[type="button"]:active {
 ================================================== */
 
 .spacer { 
-	height: 56px;
-	width: 100%;
-	clear: both;
+  height: 56px;
+  width: 100%;
+  clear: both;
 }
 
 /* main header */
 
 .main-header { margin: 49px 0 21px; text-align: center; }
+
 .main-header h1 {
-	display: inline-block;
-	margin: 0;
-	padding: 0 10px 21px; 
-	background: url(../images/heading_stripe.png) repeat-x left bottom; 
+  display: inline-block;
+  margin: 0;
+  padding: 0 10px 21px; 
+  background: url("../images/heading_stripe.png") repeat-x left bottom; 
 }
 
 /* purchase button */
 
 .purchase {
-	padding-top: 48px;
+  padding-top: 48px;
 }
 
 .purchase em {
-	display: block;
-	font-size: 12px;
-	line-height: 1.3em;
-	color: #999999;
+  display: block;
+  font-size: 12px;
+  line-height: 1.3em;
+  color: #999;
 }
 
 .button-purchase {
-	text-decoration: none!important;
-	padding: 14px 18px;
-	font-size: 13px;
-	line-height: 14px;
-	box-shadow: inset 0 -3px 0 0 rgba(0,0,0,0.2);
+  text-decoration: none!important;
+  padding: 14px 18px;
+  font-size: 13px;
+  line-height: 14px;
+  box-shadow: inset 0 -3px 0 0 rgb(0 0 0 / 20%);
 }
 
 /* theme preview */
 
 .preview-theme {
-	margin: 21px 0;
-	border: 5px solid #eee;
-	background: #fff url(../images/preview.png) no-repeat center;
-	min-height: 200px;
+  margin: 21px 0;
+  border: 5px solid #eee;
+  background: #fff url("../images/preview.png") no-repeat center;
+  min-height: 200px;
 }
 
 .preview-theme:hover {
-	border: 5px solid #e5e5e5;
+  border: 5px solid #e5e5e5;
 }
 
 .preview-theme img {
-	width: 100%;
-	height: auto;
-	vertical-align: top;
+  width: 100%;
+  height: auto;
+  vertical-align: top;
 }
 
 /* nav links */
 
 .nav-links {
-	margin-bottom: 2px;
+  margin-bottom: 2px;
 }
 
-.nav-links:before {
-	content: '';
-	display: block;
-	width: 10px;
-	height: 0;
-	border-top: 1px solid #ccc;
-	margin-bottom: 10px;
+.nav-links::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 0;
+  border-top: 1px solid #ccc;
+  margin-bottom: 10px;
 }
 
 .nav-links a {
-	font-weight: bold;
-	text-decoration: none;
-	color: #555;
+  font-weight: bold;
+  text-decoration: none;
+  color: #555;
 }
 
 .nav-links a:hover {
-	color: #ff5452;
+  color: #ff5452;
 }
 
 /* portfolio filters */
 
 .portfolio .filters {
-	float: right;
-	margin: -35px 20px 20px 0; 
+  float: right;
+  margin: -35px 20px 20px 0; 
 }
 
 .portfolio .filters a {
-	display: inline-block;
-	margin-left: 20px;
-	padding: 3px 2px;
-	color: #999;
-	text-decoration: none;
+  display: inline-block;
+  margin-left: 20px;
+  padding: 3px 2px;
+  color: #999;
+  text-decoration: none;
 }
 
 .portfolio .filters a:hover {
-	color: #666;
+  color: #666;
 }
 
 .portfolio .filters a.filter-active {
-	color: #666;
-	border-bottom: 1px solid #47dfff;
+  color: #666;
+  border-bottom: 1px solid #47dfff;
 }
 
 /* portfolio list */
 
 .portfolio .list {
-	clear: both;
+  clear: both;
 }
 
 .portfolio .list li {
-	float: left;
-	margin: 0 20px 10px 0;
+  float: left;
+  margin: 0 20px 10px 0;
 }
 
 .portfolio .list .thumb {
-	position: relative;
-	width: 215px;
-	height: 134px;
-	margin-bottom: 14px;
-	overflow: hidden;
+  position: relative;
+  width: 215px;
+  height: 134px;
+  margin-bottom: 14px;
+  overflow: hidden;
 }
 
 .portfolio .list .thumb img {
-	max-width: 100%;
-	height: auto;
-	vertical-align: top;
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
 }
 
 .portfolio .list .view {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	background: #fff;
-	background: rgba(255,255,255,0.8);
-	border: 1px solid #fff;
-	text-align: center;
-	line-height: 0;
-	opacity: 0;
-	visibility: hidden;
-	-webkit-transition: opacity 0.3s, visibility 0s linear .3s;
-	-moz-transition: opacity 0.3s, visibility 0s linear .3s;
-	-o-transition: opacity 0.3s, visibility 0s linear .3s;
-	transition: opacity 0.3s, visibility 0s linear .3s;
-	-webkit-transform: translate3d(0,0,0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  background: rgb(255 255 255 / 80%);
+  border: 1px solid #fff;
+  text-align: center;
+  line-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0s linear 0.3s;
+  transform: translate3d(0,0,0);
 }
 
 .portfolio .list .thumb:hover .view {
-	visibility: visible;
-	opacity: 1;
-	-webkit-transition-delay: 0s;
-	-moz-transition-delay: 0s;
-	-o-transition-delay: 0s;
-	transition-delay: 0s;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
 }
 
 .portfolio .list .view .button { 
-	position: relative;
-	top: 50%;
-	margin-top: -17px;
+  position: relative;
+  top: 50%;
+  margin-top: -17px;
 }
 
 .portfolio .list h4 {
-	text-align: center;	
+  text-align: center;	
 }
 
 .portfolio .list h4 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 .portfolio .colio-active-item h4 a {
-	background: #ccc;
-	padding: 2px 10px;
+  background: #ccc;
+  padding: 2px 10px;
 }
 
 .portfolio .list p {
-	text-align: center;
-	font-size: 12px;
-	line-height: 1.3em;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.3em;
 }
 
 /* footer */
 
 footer {
-	margin-bottom: 21px;
+  margin-bottom: 21px;
 }
 
 footer .copyright {
-	font-family: Arial, sans-serif;
-	font-size: 12px;
-	line-height: 1em;
-	color: #999;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1em;
+  color: #999;
 }
 
 /* scroll up */
 
 #scrollUp {
-	position: fixed;
-	bottom: 5px;
-	right: 10px;
-	width: 42px;
-	height: 42px;
-	background: #eee url(../images/scrollup.png) no-repeat center;
-	font: 0/0 a;
-	text-shadow: none;
-	color: transparent;
-	-webkit-border-radius: 3px;
-	border-radius: 3px;
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  width: 42px;
+  height: 42px;
+  background: #eee url("../images/scrollup.png") no-repeat center;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  border-radius: 3px;
 }
 
 #scrollUp:hover {
-	background-color: #e5e5e5;
+  background-color: #e5e5e5;
 }
 
 
@@ -314,42 +302,43 @@ footer .copyright {
 /* #Media Queries
 ================================================== */
 
-	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {}
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (width <= 959px) {}
 
-	/* Tablet Portrait size to standard 960 (devices and browsers) */
-	@media only screen and (min-width: 768px) and (max-width: 959px) {
-		.colio { margin-right: 24px!important; }
-		.portfolio .list .thumb { width: 228px; height: 143px; }
-	}
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (width >= 768px) and (width <= 959px) {
+  .colio { margin-right: 24px!important; }
+  .portfolio .list .thumb { width: 228px; height: 143px; }
+}
 
-	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {
-		h1, h2, h3, h4, h5, h6 { text-align: center; }
-		.preview-theme + p { margin-bottom: 42px; }
-		.main-header { margin: 21px 0 0!important; }
-		.purchase { text-align: center; padding-top: 21px; }
-		.portfolio .filters { float: left; margin-top: 0; text-align: center; width: 100%; }
-		.portfolio .filters a { margin: 0 10px; }
-		.portfolio .list li { float: none; margin-right: 0; }
-		.colio { margin-right: 0!important; }
-		.portfolio .list .thumb { width: 420px; height: 260px; }
-		footer { text-align: center; margin-bottom: 14px!important; }
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (width <= 767px) {
+  h1, h2, h3, h4, h5, h6 { text-align: center; }
+  .preview-theme + p { margin-bottom: 42px; }
+  .main-header { margin: 21px 0 0!important; }
+  .purchase { text-align: center; padding-top: 21px; }
+  .portfolio .filters { float: left; margin-top: 0; text-align: center; width: 100%; }
+  .portfolio .filters a { margin: 0 10px; }
+  .portfolio .list li { float: none; margin-right: 0; }
+  .colio { margin-right: 0!important; }
+  .portfolio .list .thumb { width: 420px; height: 260px; }
+  footer { text-align: center; margin-bottom: 14px!important; }
 		
-	}
+}
 
-	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {
-	}
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (width >= 480px) and (width <= 767px) {
+}
 
-	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {
-		.portfolio .list .thumb { width: 300px; height: 187px; }
-	}
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (width <= 479px) {
+  .portfolio .list .thumb { width: 300px; height: 187px; }
+}
 
 
 /* #Font-Face
 ================================================== */
+
 /* 	This is the proper syntax for an @font-face file
 		Just create a "fonts" folder at the root,
 		copy your FontName into code below and remove
