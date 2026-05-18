@@ -868,8 +868,8 @@ body.mobile .mouseover::after {
 }
 
 .simple-article {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 27px;
   color: #222;
 }
 
@@ -879,8 +879,8 @@ body.mobile .mouseover::after {
 }
 
 .simple-article.large {
-  font-size: 15px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 29px;
 }
 
 .simple-article.light {
@@ -1131,7 +1131,7 @@ body.mobile .mouseover::after {
 
 .button.type-1,
 .button.type-2 {
-  font-size: 13px;
+  font-size: 16px;
   line-height: 18px;
   color: #989898;
   padding: 6px 0;
@@ -6169,6 +6169,7 @@ video {
 
 .fonts-8 .simple-article {
   font-family: Inconsolata, serif;
+  font-size: 1.7rem;
 }
 
 .fonts-8 .simple-article h1,
@@ -9162,4 +9163,84 @@ footer .copyright {
     margin-top: 15px;
     /* Muted spacing for smaller mobile screens */
   }
+}
+
+/* ==========================================================================
+   Modern Ultraviolet Button Custom Classes
+   ========================================================================== */
+
+/* The base style for both buttons */
+.button-purple,
+.button-outline {
+  display: inline-block;
+  padding: 14px 34px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+/* --- Style A: Solid Purple Button --- */
+.button-purple {
+  background-color: #8A2BE2;
+  /* Solid Ultraviolet */
+  color: #ffffff !important;
+  border: 2px solid #8A2BE2;
+  box-shadow: 0 4px 14px rgba(138, 43, 226, 0.3);
+}
+
+/* Hover Effect: Glow & Lift Up */
+.button-purple:hover {
+  background-color: #a855f7;
+  /* Luminous neon purple */
+  border-color: #a855f7;
+  color: #ffffff !important;
+  transform: translateY(-3px);
+  /* Smooth slight lift */
+  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.6);
+  /* Expanded glowing footprint */
+}
+
+/* --- Style B: Luminous Outline Button --- */
+.button-outline {
+  background-color: transparent;
+  color: #ffffff !important;
+  border: 2px solid #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover Effect: Invert to Purple Fill with Glow */
+.button-outline:hover {
+  background-color: #c084fc;
+  /* Smooth background fill */
+  border-color: #c084fc;
+  color: #000000 !important;
+  /* High contrast dark text against neon background */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(192, 132, 252, 0.6);
+}
+
+/* Active/Click State for both */
+.button:active,
+.button-outline:active {
+  transform: translateY(-1px);
+}
+
+.button {
+  font-weight: 700;
+  transform: translateY(-3px);
+  text-shadow: none;
+}
+
+/* Active pressed state utility for both button architectures */
+.btn-custom-purple:active,
+.btn-custom-outline:active {
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
