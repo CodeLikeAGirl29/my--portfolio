@@ -2,34 +2,33 @@
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
+
 <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- Basic Page Needs
-	================================================== -->
-	<meta charset="utf-8">
-	<title></title>
-	<meta name="description" content="Portfolio content expander and details viewer plugin">
-	<meta name="author" content="flGravity">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic" rel="stylesheet" type="text/css">
 
-	<!-- Mobile Specific Metas
-	================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/bootstrap.extension.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="../css/style.css" rel="stylesheet" type="text/css">
+  <link href="../css/swiper.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="../img/favicon.svg">
 
-	<!-- CSS
-	================================================== -->
-	<link rel="stylesheet" href="../css/base.css">
-	<link rel="stylesheet" href="../css/skeleton.css">
-	<link rel="stylesheet" href="../css/layout.css">
-	<link rel="stylesheet" href="../css/isotope.css">
-	<link rel="stylesheet" href="../css/colio.css">
-
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic" rel="stylesheet" type="text/css" />
-
-    <link href="../css/normalize.css" rel="stylesheet" type="text/css" />
-    <link href="../css/style.css" rel="stylesheet" type="text/css" />
-    <link href="../css/swiper.css" rel="stylesheet" type="text/css" />
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lindseyk.dev/">
+  <meta property="og:title" content="lindseyk | About Me">
+  <meta property="og:description" content="Modern, minimalistic portfolio site">
+  <meta property="og:image" content="https://metatags.io/img/meta-tags.png">
 
 
 	<!--[if lt IE 9]>
@@ -53,7 +52,7 @@
 
 
 	<script type="text/javascript">
-		$(document).ready(function(){
+		$(document).ready(function () {
 
 			// "scrollTop" plugin
 			$.scrollUp();
@@ -64,21 +63,21 @@
 				theme: 'black',
 				placement: 'inside',
 				hiddenItems: '.isotope-hidden',
-				onContent: function(content){
+				onContent: function (content) {
 					// init "fancybox" plugin
 					$('.fancybox', content).fancybox();
 				}
 			});
 
 			// "isotope" plugin
-			var filter = '*', isotope_run = function(f) {
-				var list = $('.portfolio .list').isotope({layoutMode : 'fitRows', filter: f});
-				window.setTimeout(function(){
-					list.trigger('colio','excludeHidden');
+			var filter = '*', isotope_run = function (f) {
+				var list = $('.portfolio .list').isotope({layoutMode: 'fitRows', filter: f});
+				window.setTimeout(function () {
+					list.trigger('colio', 'excludeHidden');
 				}, 25);
 			};
 
-			$('.portfolio .filters a').click(function(){
+			$('.portfolio .filters a').click(function () {
 				$(this).addClass('filter-active').siblings().removeClass('filter-active');
 				var href = $(this).attr('href').substr(1);
 				filter = href ? '.' + href : '*';
@@ -93,72 +92,73 @@
 
 	<!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="../images/favicon.ico">
-	<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png">
+	<link rel="shortcut icon" href="../img/favicon.ico">
+	<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../img/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../img/apple-touch-icon-114x114.png">
 
-  <style>
-body {
-  font: 400 1em/1.5 Neuton;
-  background: #090d00;
-  color: rgb(255 255 255 / 25%);
-  text-align: center;
-  margin: 0;
-}
+	<style>
+		body {
+			font: 400 1em/1.5 Neuton;
+			background: #090d00;
+			color: rgb(255 255 255 / 25%);
+			text-align: center;
+			margin: 0;
+		}
 
-p {
-  text-transform: uppercase;
-  letter-spacing: 0.5em;
-  display: inline-block;
-  border: 4px double rgb(255 255 255 / 25%);
-  border-width: 4px 0;
-  padding: 1.5em 0;
-  position: absolute;
-  top: 18%;
-  left: 50%;
-  width: 40em;
-  margin: 0 0 0 -20em;
-}
+		p {
+			text-transform: uppercase;
+			letter-spacing: 0.5em;
+			display: inline-block;
+			border: 4px double rgb(255 255 255 / 25%);
+			border-width: 4px 0;
+			padding: 1.5em 0;
+			position: absolute;
+			top: 18%;
+			left: 50%;
+			width: 40em;
+			margin: 0 0 0 -20em;
+		}
 
-p span {
-  font: 700 4em/1 Oswald, sans-serif;
-  letter-spacing: 0;
-  padding: 0.25em 0 0.325em;
-  display: block;
-  margin: 0 auto;
-  text-shadow: 0 0 80px rgb(255 255 255 / 50%);
+		p span {
+			font: 700 4em/1 Oswald, sans-serif;
+			letter-spacing: 0;
+			padding: 0.25em 0 0.325em;
+			display: block;
+			margin: 0 auto;
+			text-shadow: 0 0 80px rgb(255 255 255 / 50%);
 
-  /* Clip Background Image */
-  background: url("https://i.ibb.co/RDTnNrT/animated-text-fill.png") repeat-y;
-  background-clip: text;
+			/* Clip Background Image */
+			background: url("https://i.ibb.co/RDTnNrT/animated-text-fill.png") repeat-y;
+			background-clip: text;
 
-  /* Animate Background Image */
-  -webkit-text-fill-color: transparent;
-  animation: aitf 80s linear infinite;
+			/* Animate Background Image */
+			-webkit-text-fill-color: transparent;
+			animation: aitf 80s linear infinite;
 
-  /* Activate hardware acceleration for smoother animations */
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-}
+			/* Activate hardware acceleration for smoother animations */
+			transform: translate3d(0, 0, 0);
+			backface-visibility: hidden;
+		}
 
-/* Animate Background Image */
-@keyframes aitf {
-  0% {
-    background-position: 0% 50%;
-  }
+		/* Animate Background Image */
+		@keyframes aitf {
+			0% {
+				background-position: 0% 50%;
+			}
 
-  100% {
-    background-position: 100% 50%;
-  }
-}
-    </style>
+			100% {
+				background-position: 100% 50%;
+			}
+		}
+	</style>
 
-<script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-<script defer src="/_vercel/insights/script.js"></script>
+	<script>
+		window.va = window.va || function () {(window.vaq = window.vaq || []).push(arguments);};
+	</script>
+	<script defer src="/_vercel/insights/script.js"></script>
 </head>
+
 <body>
 
 	<div class="container">
@@ -169,7 +169,8 @@ p span {
 
 		</header><!-- header -->
 
-		<!-- SPACER --> <div class="spacer"></div>
+		<!-- SPACER -->
+		<div class="spacer"></div>
 
 
 		<div class="ten columns">
@@ -185,7 +186,8 @@ p span {
 		</div><!-- ten col -->
 
 
-		<!-- SPACER --> <div class="spacer"></div>
+		<!-- SPACER -->
+		<div class="spacer"></div>
 
 
 		<div class="sixteen columns">
@@ -200,12 +202,12 @@ p span {
 
 				<ul class="list">
 
-					<li class="inspiration"  data-content="#colio_c1">
+					<li class="inspiration" data-content="#colio_c1">
 						<div class="thumb">
 							<div class="view">
 								<a class="button colio-link" href="#">View Project</a>
 							</div>
-							<img src="../images/projects/expenses-redux.png" alt="Pic"/>
+							<img src="../img/projects/expenses-redux.png" alt="Pic" />
 						</div>
 						<h4><a class="colio-link" href="#">Redux Expenses</a></h4>
 						<p>Few words that describe this work</p>
@@ -216,7 +218,7 @@ p span {
 							<div class="view">
 								<a class="button colio-link" href="#">View Project</a>
 							</div>
-							<img src="../images/projects/Scrimba.png" alt="Pic"/>
+							<img src="../img/projects/Scrimba.png" alt="Pic" />
 						</div>
 						<h4><a class="colio-link" href="#">Projects Dir</a></h4>
 						<p>Few words that describe this work</p>
@@ -227,7 +229,7 @@ p span {
 							<div class="view">
 								<a class="button colio-link" href="#">View Project</a>
 							</div>
-							<img src="../images/projects/visit-fl.png" alt="Pic"/>
+							<img src="../img/projects/visit-fl.png" alt="Pic" />
 						</div>
 						<h4><a class="colio-link" href="#">Visit Florida</a></h4>
 						<p>Few words that describe this work</p>
@@ -238,7 +240,7 @@ p span {
 							<div class="view">
 								<a class="button colio-link" href="#">View Project</a>
 							</div>
-							<img src="../images/projects/Ocean-Odyssey.png" alt="Pic"/>
+							<img src="../img/projects/Ocean-Odyssey.png" alt="Pic" />
 						</div>
 						<h4><a class="colio-link" href="#">Ocean Odyssey</a></h4>
 						<p>Few words that describe this work</p>
@@ -249,7 +251,7 @@ p span {
 							<div class="view">
 								<a class="button colio-link" href="#">View Project</a>
 							</div>
-							<img src="../images/projects/lindseyk.dev.png" alt="Pic"/>
+							<img src="../img/projects/lindseyk.dev.png" alt="Pic" />
 						</div>
 						<h4><a class="colio-link" href="#">React Portfolio</a></h4>
 						<p>Few words that describe this work</p>
@@ -260,7 +262,7 @@ p span {
 							<div class="view">
 								<a class="button colio-link" href="#">View Project</a>
 							</div>
-							<img src="../images/projects/BMW-Blog.png" alt="Pic"/>
+							<img src="../img/projects/BMW-Blog.png" alt="Pic" />
 						</div>
 						<h4><a class="colio-link" href="#">BMW Blog</a></h4>
 						<p>Few words that describe this work</p>
@@ -271,7 +273,7 @@ p span {
 							<div class="view">
 								<a class="button colio-link" href="#">View Project</a>
 							</div>
-							<img src="../images/projects/cityTours.png" alt="Pic"/>
+							<img src="../img/projects/cityTours.png" alt="Pic" />
 						</div>
 						<h4><a class="colio-link" href="#">City Tours</a></h4>
 						<p>Few words that describe this work</p>
@@ -282,7 +284,7 @@ p span {
 							<div class="view">
 								<a class="button colio-link" href="#">View Project</a>
 							</div>
-							<img src="../images/projects/gitprofile.png" alt="Pic"/>
+							<img src="../img/projects/gitprofile.png" alt="Pic" />
 						</div>
 						<h4><a class="colio-link" href="#">GitProfile</a></h4>
 						<p>Few words that describe this work</p>
@@ -298,7 +300,8 @@ p span {
 				<div class="main">
 
 					<h3>This is "Colio"</h3>
-					<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+					<p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid
+						ex ea commodi consequatur?</p>
 					<a class="visit-link" href="http://codecanyon.net">Visit Site</a>
 
 				</div><!-- main -->
@@ -331,9 +334,12 @@ p span {
 				<div class="main">
 					<h3>Portfolio expanding plugin</h3>
 
-					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo <a href="http://google.com">inventore veritatis</a> et quasi architecto beatae vitae dicta sunt explicabo.</p>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+						aperiam, eaque ipsa quae ab illo <a href="http://google.com">inventore veritatis</a> et quasi architecto
+						beatae vitae dicta sunt explicabo.</p>
 
-<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+					<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+						dolores eos qui ratione voluptatem sequi nesciunt.</p>
 
 					<ul class="social">
 						<li><a class="facebook" href="http://facebook.com">Facebook</a></li>
@@ -381,43 +387,50 @@ p span {
 			</div><!-- colio-content # colio_c2 -->
 
 
-		<!-- SPACER --> <div class="spacer"></div>
+			<!-- SPACER -->
+			<div class="spacer"></div>
 
 
-	      <!-- FOOTER -->
-      	<footer class="sixteen columns">
-           <div class="wide-container-fluid wide-paddings">
-          <div class="row">
-            <div class="col-md-6 col-xs-text-center col-md-text-left col-sm-b10 col-md-b0">
-              <div class="copyright">
-                <div class="simple-article small grey transparent">
-                  &copy; 2023 All rights reserved.
-                  <div class="developed-by">
-                    <i class="fa-solid fa-code"></i> with <i class="fa fa-heart"></i> by
-                    <a href="http://lindseyk.dev" target="blank">Lindsey.</a>
-                  </div>
-                </div>
-              </div>
-              <div class="empty-space col-xs-b20 col-md-b0"></div>
-            </div>
+			<!-- FOOTER -->
+			<footer class="sixteen columns">
+				<div class="wide-container-fluid wide-paddings">
+					<div class="row">
+						<div class="col-md-6 col-xs-text-center col-md-text-left col-sm-b10 col-md-b0">
+							<div class="copyright">
+								<div class="simple-article small grey transparent">
+									&copy; 2023 All rights reserved.
+									<div class="developed-by">
+										<i class="fa-solid fa-code"></i> with <i class="fa fa-heart"></i> by
+										<a href="http://lindseyk.dev" target="blank">Lindsey.</a>
+									</div>
+								</div>
+							</div>
+							<div class="empty-space col-xs-b20 col-md-b0"></div>
+						</div>
 
-            <div class="col-md-6 col-xs-text-center col-md-text-right">
-              <div class="follow">
-                <span class="title">Follow me:</span>
-                <a class="entry" href="https://www.linkedin.com/in/lindsey-howard" target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a class="entry" href="https://www.facebook.com/codelikeagirl91" target="_blank"><i class="fa fa-facebook"></i></a>
-                <a class="entry" href="https://www.github.com/codelikeagirl29" target="_blank"><i class="fa fa-github"></i></a>
-                <a class="entry" href="https://twitter.com/dev_lindseyk" target="_blank"><i class="fa fa-twitter"></i></a>
-                <a class="entry" href="https://stackoverflow.com/users/14072521/lindsey" target="_blank"><i class="fa fa-stack-overflow"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
+						<div class="col-md-6 col-xs-text-center col-md-text-right">
+							<div class="follow">
+								<span class="title">Follow me:</span>
+								<a class="entry" href="https://www.linkedin.com/in/lindsey-howard" target="_blank"><i
+										class="fa fa-linkedin"></i></a>
+								<a class="entry" href="https://www.facebook.com/codelikeagirl91" target="_blank"><i
+										class="fa fa-facebook"></i></a>
+								<a class="entry" href="https://www.github.com/codelikeagirl29" target="_blank"><i
+										class="fa fa-github"></i></a>
+								<a class="entry" href="https://twitter.com/dev_lindseyk" target="_blank"><i
+										class="fa fa-twitter"></i></a>
+								<a class="entry" href="https://stackoverflow.com/users/14072521/lindsey" target="_blank"><i
+										class="fa fa-stack-overflow"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
 
-		</footer><!-- footer -->
+			</footer><!-- footer -->
 
 
-	</div><!-- container -->
+		</div><!-- container -->
 
 </body>
+
 </html>

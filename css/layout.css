@@ -13,34 +13,83 @@
 	#Page Styles
 	#Media Queries
 	#Font-Face */
-	
+
 
 /* #Basic Styles
 ================================================== */
-	
+
 body {
   background: #f8f8f8;
   color: #666;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   color: #444;
 }
 
-h1 { font-size: 30px; line-height: 35px; margin-bottom: 21px; }
-h2 { font-size: 21px; line-height: 28px; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.02em; }
-h3 { font-size: 18px; line-height: 21px; margin-bottom: 14px; text-transform: uppercase; letter-spacing: 0.02em; }
-h4 { font-size: 14px; line-height: 18px; margin-bottom: 7px; text-transform: uppercase; letter-spacing: 0.02em; }
+h1 {
+  font-size: 30px;
+  line-height: 35px;
+  margin-bottom: 21px;
+}
 
-a, a:visited { color: #444; text-decoration: underline; outline: 0; transition: color 0.1s; }
-a:hover, a:focus { color: #999; }
-p a, p a:visited { line-height: inherit; }
+h2 {
+  font-size: 21px;
+  line-height: 28px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
 
-p { margin: 0 0 21px; }
+h3 {
+  font-size: 18px;
+  line-height: 21px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
 
-li { line-height: 21px; margin-bottom: 7px; }
+h4 {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+a,
+a:visited {
+  color: #444;
+  text-decoration: underline;
+  outline: 0;
+  transition: color 0.1s;
+}
+
+a:hover,
+a:focus {
+  color: #999;
+}
+
+p a,
+p a:visited {
+  line-height: inherit;
+}
+
+p {
+  margin: 0 0 21px;
+}
+
+li {
+  line-height: 21px;
+  margin-bottom: 7px;
+}
 
 /* buttons */
 
@@ -54,7 +103,7 @@ input[type="button"] {
   border: none;
   border-radius: 5px;
   background: #ff5452;
-  color: #fff!important;
+  color: #fff !important;
   font-size: 13px;
   line-height: 21px;
   text-shadow: -1px 0 0 rgb(0 0 0 / 20%);
@@ -83,7 +132,7 @@ input[type="button"]:active {
 /* #Site Styles
 ================================================== */
 
-.spacer { 
+.spacer {
   height: 56px;
   width: 100%;
   clear: both;
@@ -91,13 +140,16 @@ input[type="button"]:active {
 
 /* main header */
 
-.main-header { margin: 49px 0 21px; text-align: center; }
+.main-header {
+  margin: 49px 0 21px;
+  text-align: center;
+}
 
 .main-header h1 {
   display: inline-block;
   margin: 0;
-  padding: 0 10px 21px; 
-  background: url("../images/heading_stripe.png") repeat-x left bottom; 
+  padding: 0 10px 21px;
+  background: url("../img/heading_stripe.png") repeat-x left bottom;
 }
 
 /* purchase button */
@@ -114,7 +166,7 @@ input[type="button"]:active {
 }
 
 .button-purchase {
-  text-decoration: none!important;
+  text-decoration: none !important;
   padding: 14px 18px;
   font-size: 13px;
   line-height: 14px;
@@ -126,7 +178,7 @@ input[type="button"]:active {
 .preview-theme {
   margin: 21px 0;
   border: 5px solid #eee;
-  background: #fff url("../images/preview.png") no-repeat center;
+  background: #fff url("../img/preview.png") no-repeat center;
   min-height: 200px;
 }
 
@@ -169,7 +221,7 @@ input[type="button"]:active {
 
 .portfolio .filters {
   float: right;
-  margin: -35px 20px 20px 0; 
+  margin: -35px 20px 20px 0;
 }
 
 .portfolio .filters a {
@@ -229,7 +281,7 @@ input[type="button"]:active {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0s linear 0.3s;
-  transform: translate3d(0,0,0);
+  transform: translate3d(0, 0, 0);
 }
 
 .portfolio .list .thumb:hover .view {
@@ -238,14 +290,14 @@ input[type="button"]:active {
   transition-delay: 0s;
 }
 
-.portfolio .list .view .button { 
+.portfolio .list .view .button {
   position: relative;
   top: 50%;
   margin-top: -17px;
 }
 
 .portfolio .list h4 {
-  text-align: center;	
+  text-align: center;
 }
 
 .portfolio .list h4 a {
@@ -284,7 +336,7 @@ footer .copyright {
   right: 10px;
   width: 42px;
   height: 42px;
-  background: #eee url("../images/scrollup.png") no-repeat center;
+  background: #eee url("../img/scrollup.png") no-repeat center;
   font: 0/0 a;
   text-shadow: none;
   color: transparent;
@@ -303,36 +355,86 @@ footer .copyright {
 ================================================== */
 
 /* Smaller than standard 960 (devices and browsers) */
-@media only screen and (width <= 959px) {}
+@media only screen and (width <=959px) {}
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (width >= 768px) and (width <= 959px) {
-  .colio { margin-right: 24px!important; }
-  .portfolio .list .thumb { width: 228px; height: 143px; }
+@media only screen and (width >=768px) and (width <=959px) {
+  .colio {
+    margin-right: 24px !important;
+  }
+
+  .portfolio .list .thumb {
+    width: 228px;
+    height: 143px;
+  }
 }
 
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (width <= 767px) {
-  h1, h2, h3, h4, h5, h6 { text-align: center; }
-  .preview-theme + p { margin-bottom: 42px; }
-  .main-header { margin: 21px 0 0!important; }
-  .purchase { text-align: center; padding-top: 21px; }
-  .portfolio .filters { float: left; margin-top: 0; text-align: center; width: 100%; }
-  .portfolio .filters a { margin: 0 10px; }
-  .portfolio .list li { float: none; margin-right: 0; }
-  .colio { margin-right: 0!important; }
-  .portfolio .list .thumb { width: 420px; height: 260px; }
-  footer { text-align: center; margin-bottom: 14px!important; }
-		
+@media only screen and (width <=767px) {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
+  }
+
+  .preview-theme+p {
+    margin-bottom: 42px;
+  }
+
+  .main-header {
+    margin: 21px 0 0 !important;
+  }
+
+  .purchase {
+    text-align: center;
+    padding-top: 21px;
+  }
+
+  .portfolio .filters {
+    float: left;
+    margin-top: 0;
+    text-align: center;
+    width: 100%;
+  }
+
+  .portfolio .filters a {
+    margin: 0 10px;
+  }
+
+  .portfolio .list li {
+    float: none;
+    margin-right: 0;
+  }
+
+  .colio {
+    margin-right: 0 !important;
+  }
+
+  .portfolio .list .thumb {
+    width: 420px;
+    height: 260px;
+  }
+
+  footer {
+    text-align: center;
+    margin-bottom: 14px !important;
+  }
+
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (width >= 480px) and (width <= 767px) {
-}
+@media only screen and (width >=480px) and (width <=767px) {}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (width <= 479px) {
-  .portfolio .list .thumb { width: 300px; height: 187px; }
+@media only screen and (width <=479px) {
+  .portfolio .list .thumb {
+    width: 300px;
+    height: 187px;
+  }
 }
 
 

@@ -45,7 +45,7 @@ The primary target audience for your web developer portfolio includes __potentia
 
 - Choose a clean, modern, and professional design that aligns with your personal brand.
 - Utilize a visually appealing color scheme that complements your content and creates a positive user experience.
-- Incorporate high-quality images and screenshots of your projects to visually demonstrate your skills.
+- Incorporate high-quality img and screenshots of your projects to visually demonstrate your skills.
 - Ensure the website is responsive and accessible, providing a seamless experience across different devices.
 
 ### Technical Requirements:

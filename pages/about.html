@@ -1,160 +1,188 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- fonts collection 8 -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata:wght@400;700&family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet">
-    <link
-      href="https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic"
-      rel="stylesheet"
-      type="text/css">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="../css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link
-      href="../css/bootstrap.extension.css"
-      rel="stylesheet"
-      type="text/css">
-    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="../css/style.css" rel="stylesheet" type="text/css">
-    <link href="../css/swiper.css" rel="stylesheet" type="text/css">
-    <!--[if lt IE 9]>
-			<link rel="stylesheet" type="text/css" href="css/ie8-and-down.css">
-		<![endif]-->
-    <!--[if IE 9]>
-			<link href="css/ie9.css" rel="stylesheet" type="text/css">
-		<![endif]-->
-    <link rel="shortcut icon" href="../img/favicon.svg">
-    <!-- Open Graph Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lindseyk.dev/">
-    <meta property="og:title" content="lindseyk">
-    <meta
-      property="og:description"
-      content="Modern, minimalistic portfolio site">
-    <meta
-      property="og:image"
-      content="https://metatags.io/images/meta-tags.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Barlow+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400italic,700italic" rel="stylesheet" type="text/css">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://lindseyk.dev/">
-    <meta property="twitter:title" content="lindseyk">
-    <meta
-      property="twitter:description"
-      content="Modern, minimalistic portfolio site">
-    <meta
-      property="twitter:image"
-      content="https://metatags.io/images/meta-tags.png">
-    <script
-      src="https://kit.fontawesome.com/29b275fb0c.js"
-      crossorigin="anonymous"></script>
-    <title>lindsey</title>
-    <script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-    <script defer src="/_vercel/insights/script.js"></script>
-  </head>
-  <body class="fonts-8">
-    <!-- LOADER -->
-    <div id="loader-wrapper"></div>
-    <div class="overlay frame" data-rel="1">
-      <div class="animation-wrapper full-size"></div>
-      <div class="content-wrapper full-size">
-        <div class="overlay-cell-align">
-          <div class="cell-view page-height">
-            <div class="container">
+  <link href="../css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/bootstrap.extension.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="../css/style.css" rel="stylesheet" type="text/css">
+  <link href="../css/swiper.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="../img/favicon.svg">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lindseyk.dev/">
+  <meta property="og:title" content="lindseyk | About Me">
+  <meta property="og:description" content="Modern, minimalistic portfolio site">
+  <meta property="og:image" content="https://metatags.io/img/meta-tags.png">
+
+  <title>lindsey | About</title>
+  
+  <style>
+    @media (max-width: 767px) {
+      .header-empty-space { height: 70px !important; }
+    }
+
+    /* Custom Purple Checkmark Bullet Styling */
+    .custom-checked-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    .custom-checked-list li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 12px;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    /* Injecting the Purple Checkmark */
+    .custom-checked-list li::before {
+      content: "\2713"; /* Unicode checkmark character */
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #8A2BE2; /* Vibrant modern purple color */
+      font-weight: 900;
+      font-size: 16px;
+    }
+
+    @media (max-width: 767px) {
+  .header-empty-space { height: 70px !important; }
+}
+
+/* Custom Purple Checkmark Bullet Styling */
+.custom-checked-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.custom-checked-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Injecting the Font Awesome Checkmark icon */
+.custom-checked-list li::before {
+  content: "\f00c"; /* Font Awesome unicode for a clean checkmark */
+  font-family: "FontAwesome", "Font Awesome 5 Free", "Font Awesome 6 Free", sans-serif;
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: #8A2BE2; /* Vibrant modern purple */
+  font-size: 14px;
+}
+  </style>
+  <script defer src="/_vercel/insights/script.js"></script>
+</head>
+
+<body class="fonts-8">
+  <!-- LOADER -->
+  <div id="loader-wrapper"></div>
+  <div class="overlay frame" data-rel="1">
+    <div class="animation-wrapper full-size"></div>
+    <div class="content-wrapper full-size">
+      <div class="overlay-cell-align">
+        <div class="cell-view page-height">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <nav class="text-center single-column clearfix">
+                  <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="pages/about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="button-close"></a>
+    </div>
+  </div>
+  <div id="content-block">
+    <!-- HEADER -->
+    <header class="type-4 fixed white">
+      <div class="wide-container-fluid">
+        <div class="row">
+          <div class="col-xs-6 col-sm-12 col-xs-text-left col-sm-text-center">
+            <a class="logo"><img src="../img/logo.png" alt /></a>
+          </div>
+          <div class="col-xs-6 text-right visible-xs">
+            <div class="hamburger-icon open-overlay" data-rel="1">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="close-layer toggle-visibility">
+        <div class="button-close"></div>
+      </div>
+    </header>
+    <div class="page-height">
+      <div class="homepage-4-container">
+        <div class="homepage-4-slider style-1 dark-overlay">
+          <nav class="homepage-4-slider-navigation left hidden-xs text-center">
+            <div class="rotate">
+              <div class="row">
+                <div class="col-sm-6">
+                  <a class="mouseover-simple" href="about.html">About</a>
+                </div>
+                <div class="col-sm-6">
+                  <a class="mouseover-simple" href="services.html">Services</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <nav class="homepage-4-slider-navigation right hidden-xs text-center">
+            <div class="rotate">
+              <div class="row">
+                <div class="col-sm-6">
+                  <a class="mouseover-simple" href="contact.html">Contact</a>
+                </div>
+                <div class="col-sm-6">
+                  <a class="mouseover-simple" href="portfolio.html">Portfolio</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          <div class="full-size-banner-entry full-size valign-middle"
+            style="background-image: url(../img/background.png)">
+            <div class="valign-text-wrapper text-center">
               <div class="row">
                 <div class="col-sm-12">
-                  <nav class="text-center single-column clearfix">
-                    <ul>
-                      <li><a href="index.html">Home</a></li>
-                      <li class="active"><a href="pages/about.html">About</a></li>
-                      <li><a href="services.html">Services</a></li>
-                      <li><a href="portfolio.html">Projects</a></li>
-                      <li><a href="blog.html">Blog</a></li>
-                      <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a class="button-close"></a>
-      </div>
-    </div>
-    <div id="content-block">
-      <!-- HEADER -->
-      <header class="type-4 fixed white">
-        <div class="wide-container-fluid">
-          <div class="row">
-            <div class="col-xs-6 col-sm-12 col-xs-text-left col-sm-text-center">
-              <a class="logo"><img src="../images/logo.png" alt /></a>
-            </div>
-            <div class="col-xs-6 text-right visible-xs">
-              <div class="hamburger-icon open-overlay" data-rel="1">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="close-layer toggle-visibility">
-          <div class="button-close"></div>
-        </div>
-      </header>
-      <div class="page-height">
-        <div class="homepage-4-container">
-          <div class="homepage-4-slider style-1 dark-overlay">
-            <nav
-              class="homepage-4-slider-navigation left hidden-xs text-center">
-              <div class="rotate">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <a class="mouseover-simple" href="about.html">About</a>
-                  </div>
-                  <div class="col-sm-6">
-                    <a class="mouseover-simple" href="services.html">Services</a>
-                  </div>
-                </div>
-              </div>
-            </nav>
-            <nav
-              class="homepage-4-slider-navigation right hidden-xs text-center">
-              <div class="rotate">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <a class="mouseover-simple" href="contact.html">Contact</a>
-                  </div>
-                  <div class="col-sm-6">
-                    <a class="mouseover-simple" href="portfolio.html">Portfolio</a>
-                  </div>
-                </div>
-              </div>
-            </nav>
-            <div
-              class="full-size-banner-entry full-size valign-middle"
-              style="background-image: url(../images/background.png)">
-              <div class="valign-text-wrapper text-center">
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="h2 light"><b>ABOUT THE GIRL</b></div>
-                    <div class="empty-space col-xs-b15"></div>
-                    <div class="banner-max-width">
-                      <div class="simple-article large light transparent">
-                        👋 I'm Lindsey. A hard-working web developer with a
-                        flair for creating elegant solutions in the least amount
-                        of time. I love being able to help people by simplifying
-                        some of life's more complex problems.
-                      </div>
+                  <div class="h2 light"><b>ABOUT THE GIRL</b></div>
+                  <div class="empty-space col-xs-b15"></div>
+                  <div class="banner-max-width">
+                    <div class="simple-article large light transparent">
+                      👋 I'm Lindsey. A hard-working web developer with a
+                      flair for creating elegant solutions in the least amount
+                      of time. I love being able to help people by simplifying
+                      some of life's more complex problems.
                     </div>
                   </div>
                 </div>
@@ -163,44 +191,41 @@
           </div>
         </div>
       </div>
-      <div class="wide-container-fluid wide-paddings">
-        <div class="empty-space col-xs-b40 col-sm-b0"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2 text-center">
-              <div class="h4">
-                <b>Consider. Shape. Influence. Shine.<br>
-                  Creative solutions for all your problems.</b>
-              </div>
-            </div>
-          </div>
-          <div class="empty-space col-xs-b35"></div>
-          <div class="row">
-            <div class="col-md-12 text-center">
-              <div class="buttons-align-wrapper">
-                <a
-                  href="https://drive.google.com/file/d/1MtwYuteXntyqbcVf0dUQx4yaoQ_wOJr8/view?usp=drive_link"
-                  class="button type-3">download cv</a>
-                <a href="#" class="button type-3">view all projects</a>
-              </div>
+    </div>
+    <div class="wide-container-fluid wide-paddings">
+      <div class="empty-space col-xs-b40 col-sm-b0"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2 text-center">
+            <div class="h4">
+              <b>Consider. Shape. Influence. Shine.<br>
+                Creative solutions for all your problems.</b>
             </div>
           </div>
         </div>
-        <div class="empty-space col-xs-b40 col-sm-b95"></div>
-        <!-- Left-right info blocks -->
-        <div class="empty-space col-sm-b15"></div>
+        <div class="empty-space col-xs-b35"></div>
         <div class="row">
-          <div class="col-md-12">
-            <div class="left-right-entry clearfix">
-              <div class="right">
-                <div
-                  class="entry full-size"
-                  style="background-image: url(../images/thumbnail-me.png)""></div>
+          <div class="col-md-12 text-center">
+            <div class="buttons-align-wrapper">
+              <a href="https://drive.google.com/file/d/1MtwYuteXntyqbcVf0dUQx4yaoQ_wOJr8/view?usp=drive_link"
+                class="button type-3">download cv</a>
+              <a href="#" class="button type-3">view all projects</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="empty-space col-xs-b40 col-sm-b95"></div>
+      <!-- Left-right info blocks -->
+      <div class="empty-space col-sm-b15"></div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="left-right-entry clearfix">
+            <div class="right">
+              <div class="entry full-size" style="background-image: url(../img/thumbnail-me.png)""></div>
               </div>
-              <div class="left">
+              <div class=" left">
                 <div class="row">
-                  <div
-                    class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                  <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
                     <div class="cell-view">
                       <div class="simple-article large text-center grey">
                         <h2 class="small"><b>MISSION</b></h2>
@@ -225,14 +250,11 @@
           <div class="col-md-12">
             <div class="left-right-entry new-view clearfix">
               <div class="right">
-                <div
-                  class="entry full-size"
-                  style="background-image: url(../images/thumbnail-02.png)"></div>
+                <div class="entry full-size" style="background-image: url(../img/thumbnail-02.png)"></div>
               </div>
               <div class="left">
                 <div class="row">
-                  <div
-                    class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                  <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
                     <div class="cell-view">
                       <div class="simple-article large text-center grey">
                         <h2 class="small"><b>VISION</b></h2>
@@ -255,14 +277,11 @@
           <div class="col-md-12">
             <div class="left-right-entry clearfix">
               <div class="right">
-                <div
-                  class="entry full-size"
-                  style="background-image: url(../images/thumbnail-03.png)"></div>
+                <div class="entry full-size" style="background-image: url(../img/thumbnail-03.png)"></div>
               </div>
               <div class="left">
                 <div class="row">
-                  <div
-                    class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                  <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
                     <div class="cell-view">
                       <div class="simple-article large text-center grey">
                         <h2 class="small"><b>BRAND & IDENTITY</b></h2>
@@ -289,14 +308,11 @@
           <div class="col-md-12">
             <div class="left-right-entry new-view clearfix">
               <div class="right">
-                <div
-                  class="entry full-size"
-                  style="background-image: url(../images/thumbnail-04.png)"></div>
+                <div class="entry full-size" style="background-image: url(../img/thumbnail-04.png)"></div>
               </div>
               <div class="left">
                 <div class="row">
-                  <div
-                    class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                  <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
                     <div class="cell-view">
                       <div class="empty-space col-sm-b20"></div>
                       <div class="simple-article large text-center grey">
@@ -339,7 +355,7 @@
               <div class="simple-article grey">
                 <h5><b>GRAPHIC DESIGN</b></h5>
                 <div class="empty-space col-xs-b20"></div>
-                <ul>
+             <ul class="custom-checked-list">
                   <li><a class="mouseover-simple" href="#">Designing websites</a></li>
                   <li><a class="mouseover-simple" href="#">Creating software</a></li>
                   <li><a class="mouseover-simple" href="#">Managing complex data</a></li>
@@ -355,7 +371,7 @@
               <div class="simple-article grey">
                 <h5><b>PROJECTS</b></h5>
                 <div class="empty-space col-xs-b20"></div>
-                <ul>
+               <ul class="custom-checked-list">
                   <li><a class="mouseover-simple" href="#">Adverts</a></li>
                   <li>
                     <a class="mouseover-simple" href="#">Packaging design</a>
@@ -374,8 +390,7 @@
               <div class="simple-article grey">
                 <h5><b>FRONTEND/BACKEND</b></h5>
                 <div class="empty-space col-xs-b20"></div>
-                <ul>
-                  <li>
+<ul class="custom-checked-list">                  <li>
                     <a class="mouseover-simple" href="#">Responsive design</a>
                   </li>
                   <li><a class="mouseover-simple" href="#">Landing pages</a></li>
@@ -397,27 +412,15 @@
       <div class="empty-space col-xs-b55 col-sm-b110"></div>
       <div class="wide-container-fluid wide-paddings">
         <div class="row">
-          <div
-            class="swiper-container instagram-slider"
-            data-autoplay="0"
-            data-loop="0"
-            data-speed="500"
-            data-center="0"
-            data-auto-height="false"
-            data-slides-per-view="6"
-            data-breakpoints="1"
-            data-xs-slides="1"
-            data-sm-slides="3"
-            data-md-slides="4"
-            data-parallax="0"
-            data-ini="0">
+          <div class="swiper-container instagram-slider" data-autoplay="0" data-loop="0" data-speed="500"
+            data-center="0" data-auto-height="false" data-slides-per-view="6" data-breakpoints="1" data-xs-slides="1"
+            data-sm-slides="3" data-md-slides="4" data-parallax="0" data-ini="0">
             <div class="swiper-button-prev swiper-button hidden"></div>
             <div class="swiper-button-next swiper-button hidden"></div>
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="content">
-                  <a
-                    class="entry mouseover"
+                  <a class="entry mouseover"
                     style="background-image: url(https://res.cloudinary.com/codelikeagirl29/image/upload/v1684422294/projects/Next-js-Conf-2022-Photos_zcmzzj.png)"
                     href="https://github.com/CodeLikeAGirl29/image-gallery">
                     <span class="mouseover-helper-frame"></span>
@@ -427,8 +430,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="content">
-                  <a
-                    class="entry mouseover"
+                  <a class="entry mouseover"
                     style="background-image: url(https://res.cloudinary.com/codelikeagirl29/image/upload/v1686523105/projects/Tailwind-Page_w8lcyy.png)"
                     href="https://github.com/CodeLikeAGirl29/visit-fl-react/">
                     <span class="mouseover-helper-frame"></span>
@@ -438,8 +440,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="content">
-                  <a
-                    class="entry mouseover"
+                  <a class="entry mouseover"
                     style="background-image: url(https://res.cloudinary.com/codelikeagirl29/image/upload/v1681764327/projects/127-0-0-1-63098-index-html_f7xjvp.png)"
                     href="https://github.com/CodeLikeAGirl29/unsplash-api">
                     <span class="mouseover-helper-frame"></span>
@@ -449,8 +450,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="content">
-                  <a
-                    class="entry mouseover"
+                  <a class="entry mouseover"
                     style="background-image: url(https://res.cloudinary.com/codelikeagirl29/image/upload/v1680187334/projects/Joke-Teller_v45fmo.png)"
                     href="https://github.com/CodeLikeAGirl29/robot-jokes">
                     <span class="mouseover-helper-frame"></span>
@@ -460,8 +460,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="content">
-                  <a
-                    class="entry mouseover"
+                  <a class="entry mouseover"
                     style="background-image: url(https://res.cloudinary.com/codelikeagirl29/image/upload/v1674174153/projects/Foundation-dark_zoeceg.png)"
                     href="https://github.com/CodeLikeAGirl29/foundation-gatsby">
                     <span class="mouseover-helper-frame"></span>
@@ -471,8 +470,7 @@
               </div>
               <div class="swiper-slide">
                 <div class="content">
-                  <a
-                    class="entry mouseover"
+                  <a class="entry mouseover"
                     style="background-image: url(https://res.cloudinary.com/codelikeagirl29/image/upload/v1674930235/projects/lindseyk-minimal-design_vjamy1.png)"
                     href="#">
                     <span class="mouseover-helper-frame"></span>
@@ -490,8 +488,8 @@
             <!-- <a class="button type-2" href="https://twitter.com/dev_lindseyk"
               >follow me on twitter <span><b>#dev_lindseyk</b></span></a
               > -->
-            <div class="github-card" data-github="CODELIKEAGIRL29"
-              data-width="400" data-height data-theme="default"></div>
+            <div class="github-card" data-github="CODELIKEAGIRL29" data-width="400" data-height data-theme="default">
+            </div>
             <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
           </div>
         </div>
@@ -503,8 +501,7 @@
       <footer>
         <div class="wide-container">
           <div class="row">
-            <div
-              class="col-md-6 col-xs-text-center col-md-text-left col-sm-b10 col-md-b0">
+            <div class="col-md-6 col-xs-text-center col-md-text-left col-sm-b10 col-md-b0">
               <div class="copyright">
                 <div class="simple-article small grey transparent">
                   &copy; 2023 All rights reserved.
@@ -520,18 +517,16 @@
             <div class="col-md-6 col-xs-text-center col-md-text-right">
               <div class="follow">
                 <span class="title">Follow me:</span>
-                <a class="entry"
-                  href="https://www.linkedin.com/in/lindsey-howard"
-                  target="_blank"><i class="fa fa-linkedin"></i></a>
-                <a class="entry" href="https://www.facebook.com/codelikeagirl91"
-                  target="_blank"><i class="fa fa-facebook"></i></a>
-                <a class="entry" href="https://www.github.com/codelikeagirl29"
-                  target="_blank"><i class="fa fa-github"></i></a>
-                <a class="entry" href="https://twitter.com/dev_lindseyk"
-                  target="_blank"><i class="fa fa-twitter"></i></a>
-                <a class="entry"
-                  href="https://stackoverflow.com/users/14072521/lindsey"
-                  target="_blank"><i class="fa fa-stack-overflow"></i></a>
+                <a class="entry" href="https://www.linkedin.com/in/lindsey-howard" target="_blank"><i
+                    class="fa fa-linkedin"></i></a>
+                <a class="entry" href="https://www.facebook.com/codelikeagirl91" target="_blank"><i
+                    class="fa fa-facebook"></i></a>
+                <a class="entry" href="https://www.github.com/codelikeagirl29" target="_blank"><i
+                    class="fa fa-github"></i></a>
+                <a class="entry" href="https://twitter.com/dev_lindseyk" target="_blank"><i
+                    class="fa fa-twitter"></i></a>
+                <a class="entry" href="https://stackoverflow.com/users/14072521/lindsey" target="_blank"><i
+                    class="fa fa-stack-overflow"></i></a>
               </div>
             </div>
           </div>
@@ -542,5 +537,6 @@
     <script src="../js/swiper.jquery.min.js"></script>
     <script src="../js/jquery.mousewheel.min.js"></script>
     <script src="../js/global.js"></script>
-  </body>
+</body>
+
 </html>
